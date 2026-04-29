@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-ink-400 text-cream-100 font-sans antialiased;
+    background-image:
+      radial-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+      radial-gradient(ellipse at top, rgba(139,30,45,0.06), transparent 60%);
+    background-size: 4px 4px, auto;
+  }
+
+  ::selection {
+    @apply bg-burgundy-400 text-cream-50;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif tracking-academic;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .container-academy {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+
+  .eyebrow {
+    @apply text-xs uppercase tracking-wider2 text-cream-400/80 font-mono;
+  }
+
+  .heading-display {
+    @apply font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight;
+  }
+
+  .heading-section {
+    @apply font-serif text-3xl md:text-4xl leading-tight;
+  }
+
+  .lede {
+    @apply text-lg md:text-xl text-cream-200/80 leading-relaxed font-light;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-5 py-3 rounded-sm text-sm tracking-academic font-medium
+           transition-all duration-200 ring-1 ring-transparent;
+  }
+  .btn-primary {
+    @apply btn bg-burgundy-400 text-cream-50 hover:bg-burgundy-300
+           ring-burgundy-300/0 hover:ring-burgundy-200/40;
+  }
+  .btn-secondary {
+    @apply btn bg-transparent text-cream-100 ring-cream-100/40 hover:ring-cream-100/80
+           hover:bg-cream-100/5;
+  }
+  .btn-ghost {
+    @apply btn text-cream-200 hover:text-cream-50 hover:bg-cream-100/5;
+  }
+
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  .section-light {
+    @apply bg-cream-100 text-ink-100;
+  }
+  .section-light h1, .section-light h2, .section-light h3 { @apply text-ink-100; }
+  .section-light .eyebrow { @apply text-burgundy-400; }
+  .section-light .lede { @apply text-ink-50/80; }
+
+  .paper-card {
+    @apply relative bg-ink-300/60 ring-1 ring-cream-100/10 rounded-sm p-6
+           hover:ring-burgundy-200/40 transition-all duration-300
+           hover:-translate-y-0.5 hover:shadow-paper backdrop-blur-sm;
+  }
+
+  .nav-link {
+    @apply text-sm tracking-academic text-cream-200/80 hover:text-cream-50
+           uppercase font-mono;
+  }
+
+  .divider {
+    @apply h-px w-12 bg-burgundy-300/60;
+  }
+
+  .input {
+    @apply w-full bg-transparent border-b border-ink-50/30 focus:border-burgundy-300
+           outline-none py-3 text-base text-ink-100 placeholder:text-ink-50/50
+           transition-colors;
+  }
+  .input-dark {
+    @apply w-full bg-transparent border-b border-cream-100/20 focus:border-burgundy-200
+           outline-none py-3 text-base text-cream-100 placeholder:text-cream-100/40
+           transition-colors;
+  }
+}
+
+@layer utilities {
+  .ring-cream-100\/8 {
+    --tw-ring-color: rgba(245, 241, 232, 0.08);
+  }
+  .text-balance { text-wrap: balance; }
+  .grain-overlay {
+    position: relative;
+  }
+  .grain-overlay::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+}

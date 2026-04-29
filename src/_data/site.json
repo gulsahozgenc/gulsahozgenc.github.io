@@ -1,0 +1,23 @@
+{
+  "title": "Gülşah Özgenç",
+  "tagline": "Klinik Nöropsikolog · Araştırmacı · Düşünür",
+  "description": "Klinik Nöropsikolog Gülşah Özgenç'in akademik portfolyosu, araştırmaları ve nöro-estetik yazıları.",
+  "url": "https://gulsahozgenc.com",
+  "locale": "tr-TR",
+  "lang": "tr",
+  "author": "Gülşah Özgenç",
+  "email": "iletisim@gulsahozgenc.com",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/",
+    "youtube":  "https://www.youtube.com/",
+    "academia": "https://independent.academia.edu/"
+  },
+  "newsletter": {
+    "title": "Nöro-Estetik Bülten",
+    "description": "Ayda bir; zihne, eyleme ve dirence dair düşünce notları."
+  },
+  "form": {
+    "formspreeId": "yourFormspreeID",
+    "typeformId": ""
+  }
+}

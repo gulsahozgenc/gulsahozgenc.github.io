@@ -1,0 +1,35 @@
+<footer class="border-t border-cream-100/8 bg-ink-500 text-cream-200/70">
+  <div class="container-academy py-14 grid gap-10 md:grid-cols-3">
+
+    <div>
+      <p class="font-serif text-2xl text-cream-50 leading-tight">{{ site.title }}</p>
+      <p class="mt-2 text-sm text-cream-200/60 max-w-xs">{{ site.tagline }}</p>
+    </div>
+
+    <div>
+      <p class="eyebrow mb-4">Gezinme</p>
+      <ul class="space-y-2 text-sm">
+        {% for item in nav %}
+          <li><a href="{{ item.href }}" class="hover:text-burgundy-200 transition-colors">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div>
+      <p class="eyebrow mb-4">İletişim</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="mailto:{{ site.email }}" class="hover:text-burgundy-200 transition-colors">{{ site.email }}</a></li>
+        <li><a href="{{ site.socials.linkedin }}" target="_blank" rel="noopener" class="hover:text-burgundy-200 transition-colors">LinkedIn</a></li>
+        <li><a href="{{ site.socials.youtube }}"  target="_blank" rel="noopener" class="hover:text-burgundy-200 transition-colors">YouTube</a></li>
+        <li><a href="{{ site.socials.academia }}" target="_blank" rel="noopener" class="hover:text-burgundy-200 transition-colors">Academia.edu</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-cream-100/6">
+    <div class="container-academy py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 text-xs text-cream-200/50">
+      <p>© {{ "" | year }} {{ site.author }}. Tüm hakları saklıdır.</p>
+      <p class="font-mono tracking-wider2 uppercase">Düşünmek, bir disiplindir.</p>
+    </div>
+  </div>
+</footer>

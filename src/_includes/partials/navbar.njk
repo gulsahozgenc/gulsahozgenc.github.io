@@ -1,0 +1,44 @@
+<header
+  data-navbar
+  class="fixed top-0 inset-x-0 z-50 transition-all duration-300
+         bg-ink-400/0 backdrop-blur-0 border-b border-transparent
+         [&.is-scrolled]:bg-ink-400/85 [&.is-scrolled]:backdrop-blur-md
+         [&.is-scrolled]:border-cream-100/8">
+  <div class="container-academy flex items-center justify-between h-16 md:h-20">
+
+    <a href="/" class="group flex items-center gap-2">
+      <span class="font-serif italic text-2xl text-burgundy-200 leading-none">g</span>
+      <span class="font-mono text-xs uppercase tracking-wider2 text-cream-200/80
+                   group-hover:text-cream-50 transition-colors">
+        gülşah özgenç
+      </span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      {% for item in nav %}
+        <a href="{{ item.href }}" class="nav-link">{{ item.label }}</a>
+      {% endfor %}
+      <a href="#iletisim" class="btn-primary !py-2 !px-4 text-xs">İşbirliği</a>
+    </nav>
+
+    <button data-menu-toggle aria-expanded="false" aria-controls="mobile-menu"
+            class="md:hidden inline-flex items-center justify-center w-10 h-10
+                   text-cream-100 hover:text-burgundy-200 transition-colors">
+      <span class="sr-only">Menüyü aç</span>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+           stroke-width="1.5" stroke-linecap="round">
+        <path d="M4 7h16M4 12h16M4 17h16" />
+      </svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" data-mobile-menu
+       class="hidden md:hidden border-t border-cream-100/8 bg-ink-400/95 backdrop-blur-md">
+    <nav class="container-academy py-6 flex flex-col gap-4">
+      {% for item in nav %}
+        <a href="{{ item.href }}" class="nav-link text-base">{{ item.label }}</a>
+      {% endfor %}
+      <a href="#iletisim" class="btn-primary !py-2 !px-4 text-xs w-fit">İşbirliği</a>
+    </nav>
+  </div>
+</header>
