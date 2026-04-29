@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "show_stats": true,
+    "eyebrow": "Klinik Nöropsikoloji · İstanbul",
+    "headline_prefix": "Zihin ile eylemin",
+    "headline_accent": "kesişimlerini",
+    "headline_suffix": "keşfetmek.",
+    "lede": "Klinik Nöropsikolog · Araştırmacı · Düşünür. Dirence, nöroplastisiteye ve modern bireyin bilişsel hijyenine dair akademik bir bakış.",
+    "cta_primary_label": "Araştırmaları İncele",
+    "cta_primary_href": "#arastirma",
+    "cta_secondary_label": "İşbirliği",
+    "cta_secondary_href": "#iletisim",
+    "portrait_image": "/assets/img/portrait.jpg",
+    "portrait_alt": "Gülşah Özgenç portresi",
+    "portrait_caption_left": "Portre · 2024",
+    "portrait_caption_right": "G. Özgenç",
+    "stats": [
+      { "value": "12+", "label_top": "Yıl",     "label_bottom": "Klinik deneyim" },
+      { "value": "30+", "label_top": "Yayın",   "label_bottom": "Akademik çalışma" },
+      { "value": "40+", "label_top": "Konuşma", "label_bottom": "Konferans · panel" }
+    ]
+  },
+  "philosophy": {
+    "show": true,
+    "eyebrow": "Felsefe",
+    "heading_prefix": "Terapi değil,",
+    "heading_accent": "yeniden kalibrasyon.",
+    "paragraphs": [
+      "Klinik pratiğim, zihni bir <em>onarılması gereken arıza</em> olarak değil; sürekli kendini yeniden kuran, esnek bir mimari olarak görür. Burada amaç rahatlatmak değil, <strong>fark etmektir.</strong>",
+      "Korkunun, yasın ve sürekli akan dijital uyaranların altında kalan dikkati geri kazanmak için <strong>nöroplastisiteyi</strong> bir araç olarak kullanıyorum. Maruz bırakma, yapısal sessizlik ve estetik düzenleme; modern bireyin bilişsel hijyenini inşa eden üç sütun.",
+      "Çalışma alanım dirençle başlar, nöro-estetikle genişler, akademik soruşturmayla derinleşir. Hedef; danışanın benden değil, kendi karar mekanizmasından beslenmesini sağlamaktır."
+    ],
+    "principles": [
+      { "title": "Nöroplastisite",            "subtitle": "Beyin yeniden örülür." },
+      { "title": "Direnç",                    "subtitle": "Kırılgan değil, esnek." },
+      { "title": "Korkuyla yüzleşme",         "subtitle": "Kaçınmak, büyümeyi durdurur." },
+      { "title": "Beyin çürümesini aşmak",    "subtitle": "Dikkat, çağın para birimi." }
+    ]
+  },
+  "research": {
+    "show": true,
+    "eyebrow": "Akademik Portfolyo",
+    "heading_prefix": "Beyin çürümesinin panzehiri:",
+    "heading_accent": "derin okuma.",
+    "lede": "Yayınlanmış makaleler, araştırma notları ve düşünce yazıları. Hepsi tek bir soruya bağlı: <em>Modern zihin nasıl iyileşir?</em>",
+    "all_publications_label": "Tüm yayınlar",
+    "all_publications_url": "#"
+  },
+  "media": {
+    "show": true,
+    "eyebrow": "Medya & İçgörü",
+    "heading_prefix": "Sinematik düşünme.",
+    "heading_accent": "Sessiz, ama keskin.",
+    "lede": "Kısa metrajlı düşünce videoları, anlatım eşliğinde kavramları açan görsel notlar. Beyin çürümesinin panzehiri olarak tasarlandı.",
+    "tags": [
+      "Korku · Maruz bırakma · Kalibrasyon",
+      "Dikkat ekonomisi · bilişsel hijyen",
+      "Direnç · yas · yeniden inşa"
+    ],
+    "main_video":  { "id": "ScMzIvxBSi4", "title": "Nöroplastisite üzerine" },
+    "side_videos": [
+      { "id": "iIKCdWeOzG8", "title": "Korkuyla yüzleşmek" },
+      { "id": "Y6ljFaKRTrI", "title": "Beyin çürümesi" }
+    ]
+  },
+  "newsletter": {
+    "show": true,
+    "heading_prefix": "Ayda bir mektup.",
+    "heading_accent": "Gürültü yok, düşünce var.",
+    "submit_label": "Abone Ol",
+    "footnote": "İstediğiniz zaman ayrılabilirsiniz. Spam yok."
+  },
+  "contact": {
+    "show": true,
+    "eyebrow": "Profesyonel İletişim",
+    "heading_prefix": "Profesyonel görüşme &",
+    "heading_accent": "akademik talepler.",
+    "lede": "Konferans davetleri, akademik işbirlikleri, kurumsal danışmanlık ve seçili bireysel görüşme talepleri için iletişim formu. Tüm mesajlar şahsen okunur.",
+    "info": [
+      { "icon": "envelope", "text": "iletisim@gulsahozgenc.com", "href": "mailto:iletisim@gulsahozgenc.com" },
+      { "icon": "clock",    "text": "Yanıt süresi: 2 iş günü", "href": "" },
+      { "icon": "pin",      "text": "İstanbul · Türkiye",      "href": "" }
+    ],
+    "form_options": [
+      { "value": "akademik",   "label": "Akademik işbirliği" },
+      { "value": "konferans",  "label": "Konferans · konuşma daveti" },
+      { "value": "kurumsal",   "label": "Kurumsal danışmanlık" },
+      { "value": "medya",      "label": "Medya · röportaj" },
+      { "value": "bireysel",   "label": "Bireysel görüşme talebi" },
+      { "value": "diger",      "label": "Diğer" }
+    ],
+    "submit_label": "Gönder",
+    "consent_text": "Form gönderilerek bilgilerin yalnızca iletişim amacıyla işlenmesi kabul edilmiş olur."
+  }
+}

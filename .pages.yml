@@ -13,7 +13,41 @@ settings:
       update: "İçerik güncellendi: {filename}"
       delete: "İçerik silindi: {filename}"
 
+components:
+  paragraph_list:
+    type: text
+    list: true
+    description: "Her satır ayrı bir paragraf. <em>italik</em> ve <strong>kalın</strong> HTML etiketlerini kullanabilirsin."
+
 content:
+
+  # ---------------------------------------------------------------- TEMA
+  - name: theme
+    label: Tema (Renk & Görünüm)
+    type: file
+    path: src/_data/theme.json
+    format: json
+    fields:
+      - name: accent
+        label: Vurgu rengi
+        type: select
+        description: "Tüm vurgu, buton ve italik kelime rengi."
+        options:
+          values:
+            - name: burgundy
+              label: Bordo (vintage hırka kırmızısı)
+            - name: emerald
+              label: Koyu Zümrüt (akademik yeşil)
+            - name: bronze
+              label: Bronz (sıcak altın)
+      - name: show_grain_overlay
+        label: Grain efekti (kağıt dokusu)
+        type: boolean
+      - name: footer_motto
+        label: Footer mottosu
+        type: string
+
+  # ---------------------------------------------------------------- SITE
   - name: site
     label: Site Ayarları
     type: file
@@ -28,19 +62,19 @@ content:
         label: Slogan / üst başlık
         type: string
       - name: description
-        label: SEO açıklaması (Google'da görünen kısa metin)
+        label: SEO açıklaması
         type: text
       - name: url
         label: Site adresi (URL)
         type: string
       - name: locale
-        label: Locale (tr-TR)
+        label: Locale
         type: string
       - name: lang
-        label: Dil kodu (tr)
+        label: Dil kodu
         type: string
       - name: author
-        label: Yazar / Site sahibi
+        label: Yazar
         type: string
       - name: email
         label: İletişim e-postası
@@ -52,37 +86,220 @@ content:
         label: Sosyal medya bağlantıları
         type: object
         fields:
-          - name: linkedin
-            label: LinkedIn URL
-            type: string
-          - name: youtube
-            label: YouTube URL
-            type: string
-          - name: academia
-            label: Academia.edu URL
-            type: string
+          - { name: linkedin, label: LinkedIn URL, type: string }
+          - { name: youtube,  label: YouTube URL,  type: string }
+          - { name: academia, label: Academia.edu URL, type: string }
       - name: newsletter
         label: Bülten metinleri
         type: object
         fields:
-          - name: title
-            label: Bülten başlığı
-            type: string
-          - name: description
-            label: Bülten açıklaması
-            type: text
+          - { name: title,       label: Bülten başlığı, type: string }
+          - { name: description, label: Bülten açıklaması, type: text }
       - name: form
-        label: İletişim formu ayarları
+        label: Form ayarları
         type: object
         fields:
-          - name: formspreeId
-            label: Formspree form id (yoksa boş bırakın)
-            type: string
-            description: "formspree.io üzerinden alınan id. Sadece harf-rakam karakter, slash yok."
-          - name: typeformId
-            label: Typeform id (kullanılıyorsa)
-            type: string
+          - { name: formspreeId, label: "Formspree id (formspree.io'dan al)", type: string }
+          - { name: typeformId,  label: "Typeform id (boşsa Formspree kullanılır)", type: string }
 
+  # ---------------------------------------------------------------- HOME PAGE
+  - name: home
+    label: Ana Sayfa İçeriği
+    type: group
+    items:
+
+      - name: home_hero
+        label: 1. Hero (Üst bölüm)
+        type: file
+        path: src/_data/home.json
+        format: json
+        fields:
+          - name: hero
+            label: ""
+            type: object
+            fields:
+              - { name: eyebrow, label: "Üst etiket (eyebrow)", type: string }
+              - { name: headline_prefix, label: "Başlık - ön kısım", type: string }
+              - { name: headline_accent, label: "Başlık - vurgulu kelime (italik)", type: string }
+              - { name: headline_suffix, label: "Başlık - son kısım", type: string }
+              - name: lede
+                label: "Alt başlık (lede)"
+                type: text
+                description: "<em>, <strong> kullanılabilir."
+              - { name: cta_primary_label,   label: "Birincil buton metni", type: string }
+              - { name: cta_primary_href,    label: "Birincil buton hedefi (#bolum)", type: string }
+              - { name: cta_secondary_label, label: "İkincil buton metni", type: string }
+              - { name: cta_secondary_href,  label: "İkincil buton hedefi", type: string }
+              - name: portrait_image
+                label: "Portre fotoğrafı"
+                type: image
+              - { name: portrait_alt, label: "Portre alt metni (erişilebilirlik)", type: string }
+              - { name: portrait_caption_left,  label: "Portre üst etiketi (sol)", type: string }
+              - { name: portrait_caption_right, label: "Portre alt imzası (sağ)", type: string }
+              - { name: show_stats, label: "İstatistik bloğunu göster", type: boolean }
+              - name: stats
+                label: "İstatistikler (3 kart)"
+                type: object
+                list: true
+                fields:
+                  - { name: value,        label: "Değer (örn: 12+)", type: string }
+                  - { name: label_top,    label: "Üst etiket",       type: string }
+                  - { name: label_bottom, label: "Alt etiket",       type: string }
+        settings:
+          content:
+            merge: true
+
+      - name: home_philosophy
+        label: 2. Felsefe / Hakkında
+        type: file
+        path: src/_data/home.json
+        format: json
+        fields:
+          - name: philosophy
+            label: ""
+            type: object
+            fields:
+              - { name: show, label: "Bu bölümü göster", type: boolean }
+              - { name: eyebrow, label: "Üst etiket", type: string }
+              - { name: heading_prefix, label: "Başlık - ön kısım", type: string }
+              - { name: heading_accent, label: "Başlık - vurgulu kısım (italik)", type: string }
+              - name: paragraphs
+                label: "Paragraflar"
+                type: text
+                list: true
+                description: "Her paragraf ayrı satır. <em>italik</em> ve <strong>kalın</strong> HTML kullanılabilir."
+              - name: principles
+                label: "İlkeler (alt grid)"
+                type: object
+                list: true
+                fields:
+                  - { name: title,    label: "Başlık",  type: string }
+                  - { name: subtitle, label: "Alt yazı", type: string }
+        settings:
+          content:
+            merge: true
+
+      - name: home_research
+        label: 3. Akademik Portfolyo (üst başlık)
+        type: file
+        path: src/_data/home.json
+        format: json
+        fields:
+          - name: research
+            label: ""
+            type: object
+            fields:
+              - { name: show,                    label: "Bu bölümü göster", type: boolean }
+              - { name: eyebrow,                 label: "Üst etiket", type: string }
+              - { name: heading_prefix,          label: "Başlık - ön kısım", type: string }
+              - { name: heading_accent,          label: "Başlık - vurgulu kısım", type: string }
+              - { name: lede,                    label: "Alt başlık", type: text }
+              - { name: all_publications_label, label: "'Tüm yayınlar' link metni", type: string }
+              - { name: all_publications_url,   label: "'Tüm yayınlar' linki", type: string }
+        settings:
+          content:
+            merge: true
+
+      - name: home_media
+        label: 4. Medya / Video
+        type: file
+        path: src/_data/home.json
+        format: json
+        fields:
+          - name: media
+            label: ""
+            type: object
+            fields:
+              - { name: show, label: "Bu bölümü göster", type: boolean }
+              - { name: eyebrow, label: "Üst etiket", type: string }
+              - { name: heading_prefix, label: "Başlık - ön kısım", type: string }
+              - { name: heading_accent, label: "Başlık - vurgulu kısım", type: string }
+              - { name: lede, label: "Alt başlık", type: text }
+              - name: tags
+                label: "Etiket listesi (sol kolon)"
+                type: string
+                list: true
+              - name: main_video
+                label: "Ana video (büyük)"
+                type: object
+                fields:
+                  - { name: id,    label: "YouTube video id (URL'deki v= kısmı)", type: string }
+                  - { name: title, label: "Erişilebilirlik başlığı", type: string }
+              - name: side_videos
+                label: "Yan videolar (2 küçük)"
+                type: object
+                list: true
+                fields:
+                  - { name: id,    label: "YouTube video id", type: string }
+                  - { name: title, label: "Erişilebilirlik başlığı", type: string }
+        settings:
+          content:
+            merge: true
+
+      - name: home_newsletter
+        label: 5. Bülten
+        type: file
+        path: src/_data/home.json
+        format: json
+        fields:
+          - name: newsletter
+            label: ""
+            type: object
+            fields:
+              - { name: show,            label: "Bu bölümü göster",       type: boolean }
+              - { name: heading_prefix,  label: "Başlık - ön kısım",      type: string }
+              - { name: heading_accent,  label: "Başlık - vurgulu kısım", type: string }
+              - { name: submit_label,    label: "Buton metni",            type: string }
+              - { name: footnote,        label: "Form altı dipnot",       type: string }
+        settings:
+          content:
+            merge: true
+
+      - name: home_contact
+        label: 6. İletişim
+        type: file
+        path: src/_data/home.json
+        format: json
+        fields:
+          - name: contact
+            label: ""
+            type: object
+            fields:
+              - { name: show,            label: "Bu bölümü göster", type: boolean }
+              - { name: eyebrow,         label: "Üst etiket", type: string }
+              - { name: heading_prefix,  label: "Başlık - ön kısım", type: string }
+              - { name: heading_accent,  label: "Başlık - vurgulu kısım", type: string }
+              - { name: lede,            label: "Alt başlık", type: text }
+              - name: info
+                label: "İletişim bilgileri (sol kolon listesi)"
+                type: object
+                list: true
+                fields:
+                  - name: icon
+                    label: "İkon"
+                    type: select
+                    options:
+                      values:
+                        - { name: envelope, label: "Zarf (e-posta)" }
+                        - { name: clock,    label: "Saat (yanıt süresi)" }
+                        - { name: pin,      label: "Konum işareti" }
+                        - { name: phone,    label: "Telefon" }
+                  - { name: text, label: "Görünen metin", type: string }
+                  - { name: href, label: "Bağlantı (boş bırakılabilir)", type: string }
+              - name: form_options
+                label: "Form 'Talebin niteliği' seçenekleri"
+                type: object
+                list: true
+                fields:
+                  - { name: value, label: "Değer (form data)", type: string }
+                  - { name: label, label: "Görünen metin",    type: string }
+              - { name: submit_label, label: "Form gönder buton metni", type: string }
+              - { name: consent_text, label: "Form altı KVKK metni",     type: text }
+        settings:
+          content:
+            merge: true
+
+  # ---------------------------------------------------------------- AKADEMİK YAYINLAR
   - name: papers
     label: Akademik Yayınlar
     type: file
@@ -95,10 +312,7 @@ content:
       sort: year
       order: desc
     fields:
-      - name: title
-        label: Başlık
-        type: string
-        required: true
+      - { name: title, label: Başlık, type: string, required: true }
       - name: type
         label: Tür
         type: select
@@ -112,36 +326,23 @@ content:
             - Deneme
             - Kitap
             - Söyleşi
-      - name: year
-        label: Yıl
-        type: number
-      - name: venue
-        label: Yayın yeri / dergi / kitap adı
-        type: string
-      - name: summary
-        label: Kısa özet
-        type: text
+      - { name: year, label: Yıl, type: number }
+      - { name: venue, label: "Yayın yeri / dergi", type: string }
+      - { name: summary, label: Kısa özet, type: text }
       - name: icon
         label: Kart ikonu
         type: select
         options:
           values:
-            - name: brain
-              label: Beyin
-            - name: spiral
-              label: Sarmal (sonsuz döngü)
-            - name: compass
-              label: Pusula
-            - name: eye
-              label: Göz
-            - name: thread
-              label: İplik (bağlanma)
-            - name: moon
-              label: Ay (sessizlik)
-      - name: url
-        label: Bağlantı (PDF / DOI / makale linki)
-        type: string
+            - { name: brain,   label: Beyin }
+            - { name: spiral,  label: Sarmal }
+            - { name: compass, label: Pusula }
+            - { name: eye,     label: Göz }
+            - { name: thread,  label: İplik }
+            - { name: moon,    label: Ay }
+      - { name: url, label: "Bağlantı (PDF / DOI)", type: string }
 
+  # ---------------------------------------------------------------- NAVIGASYON
   - name: navigation
     label: Üst Menü (Navigasyon)
     type: file
@@ -152,11 +353,5 @@ content:
       fields: [label, href]
       primary: label
     fields:
-      - name: label
-        label: Menüde görünen yazı
-        type: string
-        required: true
-      - name: href
-        label: Bağlantı (#bolum-id veya tam URL)
-        type: string
-        required: true
+      - { name: label, label: Menü etiketi, type: string, required: true }
+      - { name: href,  label: "Bağlantı (#bolum-id)", type: string, required: true }

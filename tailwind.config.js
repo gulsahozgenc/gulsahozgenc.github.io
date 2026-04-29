@@ -26,13 +26,13 @@ module.exports = {
           800: "#272320"
         },
         burgundy: {
-          50:  "#f4dfe2",
-          100: "#e0a8ad",
-          200: "#c66b73",
-          300: "#a73f48",
-          400: "#8b1e2d",
-          500: "#6e1622",
-          600: "#511019"
+          50:  "rgb(var(--accent-50)  / <alpha-value>)",
+          100: "rgb(var(--accent-100) / <alpha-value>)",
+          200: "rgb(var(--accent-200) / <alpha-value>)",
+          300: "rgb(var(--accent-300) / <alpha-value>)",
+          400: "rgb(var(--accent-400) / <alpha-value>)",
+          500: "rgb(var(--accent-500) / <alpha-value>)",
+          600: "rgb(var(--accent-600) / <alpha-value>)"
         },
         emerald2: {
           100: "#bcd0c6",

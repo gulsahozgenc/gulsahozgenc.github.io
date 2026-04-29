@@ -3,8 +3,35 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  :root, .theme-burgundy {
     color-scheme: dark;
+    --accent-50:  244 223 226;
+    --accent-100: 224 168 173;
+    --accent-200: 198 107 115;
+    --accent-300: 167  63  72;
+    --accent-400: 139  30  45;
+    --accent-500: 110  22  34;
+    --accent-600:  81  16  25;
+  }
+
+  .theme-emerald {
+    --accent-50:  220 232 224;
+    --accent-100: 188 208 198;
+    --accent-200: 126 165 150;
+    --accent-300:  70 115  95;
+    --accent-400:  31  77  63;
+    --accent-500:  22  58  48;
+    --accent-600:  13  38  32;
+  }
+
+  .theme-bronze {
+    --accent-50:  244 234 218;
+    --accent-100: 230 207 168;
+    --accent-200: 200 168 117;
+    --accent-300: 170 130  78;
+    --accent-400: 138  99  49;
+    --accent-500: 109  78  35;
+    --accent-600:  81  57  25;
   }
 
   html {

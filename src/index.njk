@@ -7,7 +7,7 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
 {# ==========================================================================
    1. HERO
    ========================================================================== #}
-<section id="hero" class="relative pt-28 md:pt-32 pb-24 md:pb-32 overflow-hidden grain-overlay">
+<section id="hero" class="relative pt-28 md:pt-32 pb-24 md:pb-32 overflow-hidden {% if theme.show_grain_overlay %}grain-overlay{% endif %}">
   <div class="absolute inset-0 bg-vignette pointer-events-none"></div>
 
   <div class="container-academy relative grid lg:grid-cols-12 gap-12 items-center">
@@ -15,46 +15,40 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
     <div class="lg:col-span-7 order-2 lg:order-1">
       <p class="eyebrow mb-6 flex items-center gap-3">
         <span class="divider"></span>
-        Klinik Nöropsikoloji · İstanbul
+        {{ home.hero.eyebrow }}
       </p>
 
       <h1 class="heading-display text-cream-50 text-balance">
-        Zihin ile eylemin
-        <span class="italic text-burgundy-200">kesişimlerini</span>
-        keşfetmek.
+        {{ home.hero.headline_prefix }}
+        <span class="italic text-burgundy-200">{{ home.hero.headline_accent }}</span>
+        {{ home.hero.headline_suffix }}
       </h1>
 
-      <p class="lede mt-8 max-w-2xl">
-        Klinik Nöropsikolog · Araştırmacı · Düşünür.
-        Dirence, nöroplastisiteye ve modern bireyin bilişsel hijyenine dair
-        akademik bir bakış.
-      </p>
+      <p class="lede mt-8 max-w-2xl">{{ home.hero.lede | safe }}</p>
 
       <div class="mt-10 flex flex-wrap items-center gap-4">
-        <a href="#arastirma" class="btn-primary">
-          Araştırmaları İncele
+        {% if home.hero.cta_primary_label %}
+        <a href="{{ home.hero.cta_primary_href }}" class="btn-primary">
+          {{ home.hero.cta_primary_label }}
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a href="#iletisim" class="btn-secondary">İşbirliği</a>
+        {% endif %}
+        {% if home.hero.cta_secondary_label %}
+        <a href="{{ home.hero.cta_secondary_href }}" class="btn-secondary">{{ home.hero.cta_secondary_label }}</a>
+        {% endif %}
       </div>
 
+      {% if home.hero.show_stats and home.hero.stats | length %}
       <dl class="mt-14 grid grid-cols-3 gap-8 max-w-lg border-t border-cream-100/8 pt-8">
+        {% for stat in home.hero.stats %}
         <div>
-          <dt class="eyebrow">Yıl</dt>
-          <dd class="font-serif text-2xl text-cream-50 mt-1">12+</dd>
-          <p class="text-xs text-cream-200/50 mt-1">Klinik deneyim</p>
+          <dt class="eyebrow">{{ stat.label_top }}</dt>
+          <dd class="font-serif text-2xl text-cream-50 mt-1">{{ stat.value }}</dd>
+          <p class="text-xs text-cream-200/50 mt-1">{{ stat.label_bottom }}</p>
         </div>
-        <div>
-          <dt class="eyebrow">Yayın</dt>
-          <dd class="font-serif text-2xl text-cream-50 mt-1">30+</dd>
-          <p class="text-xs text-cream-200/50 mt-1">Akademik çalışma</p>
-        </div>
-        <div>
-          <dt class="eyebrow">Konuşma</dt>
-          <dd class="font-serif text-2xl text-cream-50 mt-1">40+</dd>
-          <p class="text-xs text-cream-200/50 mt-1">Konferans · panel</p>
-        </div>
+        {% endfor %}
       </dl>
+      {% endif %}
     </div>
 
     <div class="lg:col-span-5 order-1 lg:order-2 relative">
@@ -63,13 +57,15 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
         <div class="absolute inset-0 ring-1 ring-cream-100/10 rounded-sm
                     bg-gradient-to-br from-ink-200 via-ink-300 to-ink-500
                     overflow-hidden">
-          <img src="/assets/img/portrait.jpg" alt="Gülşah Özgenç portresi"
+          {% if home.hero.portrait_image %}
+          <img src="{{ home.hero.portrait_image }}" alt="{{ home.hero.portrait_alt }}"
                class="w-full h-full object-cover opacity-90 mix-blend-luminosity hover:mix-blend-normal hover:opacity-100 transition-all duration-700"
-               onerror="this.style.display='none'; this.parentNode.classList.add('is-fallback')" />
+               onerror="this.style.display='none'" />
+          {% endif %}
           <div class="absolute inset-0 bg-vignette pointer-events-none"></div>
           <figcaption class="absolute bottom-4 left-4 right-4 flex items-end justify-between text-cream-100/80">
-            <span class="font-mono text-[10px] uppercase tracking-wider2">Portre · 2024</span>
-            <span class="font-serif italic text-sm">G. Özgenç</span>
+            <span class="font-mono text-[10px] uppercase tracking-wider2">{{ home.hero.portrait_caption_left }}</span>
+            <span class="font-serif italic text-sm">{{ home.hero.portrait_caption_right }}</span>
           </figcaption>
         </div>
       </div>
@@ -88,84 +84,68 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
 {# ==========================================================================
    2. FELSEFE / HAKKINDA
    ========================================================================== #}
+{% if home.philosophy.show %}
 <section id="felsefe" class="section section-light relative overflow-hidden">
   <div class="container-academy grid md:grid-cols-12 gap-12">
 
     <aside class="md:col-span-4">
       <p class="eyebrow flex items-center gap-3">
-        <span class="divider"></span> Felsefe
+        <span class="divider"></span> {{ home.philosophy.eyebrow }}
       </p>
       <h2 class="heading-section mt-6 text-balance">
-        Terapi değil,
-        <span class="italic text-burgundy-400">yeniden kalibrasyon.</span>
+        {{ home.philosophy.heading_prefix }}
+        <span class="italic text-burgundy-400">{{ home.philosophy.heading_accent }}</span>
       </h2>
     </aside>
 
     <div class="md:col-span-7 md:col-start-6 max-w-prose2 text-ink-50/85 space-y-5 text-base md:text-lg leading-relaxed">
-      <p>
-        Klinik pratiğim, zihni bir <em>onarılması gereken arıza</em> olarak değil;
-        sürekli kendini yeniden kuran, esnek bir mimari olarak görür.
-        Burada amaç rahatlatmak değil, <strong>fark etmektir.</strong>
-      </p>
-      <p>
-        Korkunun, yasın ve sürekli akan dijital uyaranların altında kalan dikkati
-        geri kazanmak için <strong>nöroplastisiteyi</strong> bir araç olarak kullanıyorum.
-        Maruz bırakma, yapısal sessizlik ve estetik düzenleme; modern bireyin
-        bilişsel hijyenini inşa eden üç sütun.
-      </p>
-      <p>
-        Çalışma alanım dirençle başlar, nöro-estetikle genişler, akademik
-        soruşturmayla derinleşir. Hedef; danışanın benden değil, kendi
-        karar mekanizmasından beslenmesini sağlamaktır.
-      </p>
+      {% for paragraph in home.philosophy.paragraphs %}
+      <p>{{ paragraph | safe }}</p>
+      {% endfor %}
 
+      {% if home.philosophy.principles | length %}
       <ul class="grid grid-cols-2 gap-4 pt-6 mt-8 border-t border-ink-50/15">
+        {% for p in home.philosophy.principles %}
         <li class="flex items-start gap-3">
           <span class="mt-1 w-2 h-2 rounded-full bg-burgundy-400 shrink-0"></span>
-          <span><strong class="font-medium">Nöroplastisite</strong><br/><span class="text-sm text-ink-50/60">Beyin yeniden örülür.</span></span>
+          <span>
+            <strong class="font-medium">{{ p.title }}</strong><br/>
+            <span class="text-sm text-ink-50/60">{{ p.subtitle }}</span>
+          </span>
         </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 w-2 h-2 rounded-full bg-burgundy-400 shrink-0"></span>
-          <span><strong class="font-medium">Direnç</strong><br/><span class="text-sm text-ink-50/60">Kırılgan değil, esnek.</span></span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 w-2 h-2 rounded-full bg-burgundy-400 shrink-0"></span>
-          <span><strong class="font-medium">Korkuyla yüzleşme</strong><br/><span class="text-sm text-ink-50/60">Kaçınmak, büyümeyi durdurur.</span></span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1 w-2 h-2 rounded-full bg-burgundy-400 shrink-0"></span>
-          <span><strong class="font-medium">Beyin çürümesini aşmak</strong><br/><span class="text-sm text-ink-50/60">Dikkat, çağın para birimi.</span></span>
-        </li>
+        {% endfor %}
       </ul>
+      {% endif %}
     </div>
   </div>
 </section>
+{% endif %}
 
 
 {# ==========================================================================
-   3. AKADEMİK PORTFOLYO ("Brainrot" Section)
+   3. AKADEMİK PORTFOLYO
    ========================================================================== #}
-<section id="arastirma" class="section relative overflow-hidden grain-overlay">
+{% if home.research.show %}
+<section id="arastirma" class="section relative overflow-hidden {% if theme.show_grain_overlay %}grain-overlay{% endif %}">
   <div class="container-academy">
 
     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
       <div class="max-w-2xl">
         <p class="eyebrow flex items-center gap-3">
-          <span class="divider"></span> Akademik Portfolyo
+          <span class="divider"></span> {{ home.research.eyebrow }}
         </p>
         <h2 class="heading-section mt-6 text-cream-50 text-balance">
-          Beyin çürümesinin panzehiri:
-          <span class="italic text-burgundy-200">derin okuma.</span>
+          {{ home.research.heading_prefix }}
+          <span class="italic text-burgundy-200">{{ home.research.heading_accent }}</span>
         </h2>
-        <p class="lede mt-6">
-          Yayınlanmış makaleler, araştırma notları ve düşünce yazıları.
-          Hepsi tek bir soruya bağlı: <em>Modern zihin nasıl iyileşir?</em>
-        </p>
+        <p class="lede mt-6">{{ home.research.lede | safe }}</p>
       </div>
-      <a href="#" class="btn-ghost self-start md:self-end">
-        Tüm yayınlar
+      {% if home.research.all_publications_label %}
+      <a href="{{ home.research.all_publications_url }}" class="btn-ghost self-start md:self-end">
+        {{ home.research.all_publications_label }}
         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
+      {% endif %}
     </div>
 
     <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -205,9 +185,11 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
             </p>
             <div class="mt-6 flex items-center justify-between pt-5 border-t border-cream-100/8">
               <span class="text-xs text-cream-200/50 italic">{{ paper.venue }}</span>
+              {% if paper.url %}
               <a href="{{ paper.url }}" class="text-xs font-mono uppercase tracking-wider2 text-burgundy-200 hover:text-burgundy-100">
                 Oku →
               </a>
+              {% endif %}
             </div>
           </article>
         </li>
@@ -215,65 +197,67 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
     </ul>
   </div>
 </section>
+{% endif %}
 
 
 {# ==========================================================================
    4. MEDYA / VIDEO
    ========================================================================== #}
+{% if home.media.show %}
 <section id="medya" class="section bg-ink-500 relative overflow-hidden">
   <div class="container-academy grid lg:grid-cols-12 gap-12 items-start">
 
     <div class="lg:col-span-5">
       <p class="eyebrow flex items-center gap-3">
-        <span class="divider"></span> Medya & İçgörü
+        <span class="divider"></span> {{ home.media.eyebrow }}
       </p>
       <h2 class="heading-section mt-6 text-cream-50 text-balance">
-        Sinematik düşünme.
-        <span class="italic text-burgundy-200">Sessiz, ama keskin.</span>
+        {{ home.media.heading_prefix }}
+        <span class="italic text-burgundy-200">{{ home.media.heading_accent }}</span>
       </h2>
-      <p class="lede mt-6">
-        Kısa metrajlı düşünce videoları, anlatım eşliğinde kavramları açan
-        görsel notlar. Beyin çürümesinin panzehiri olarak tasarlandı.
-      </p>
+      <p class="lede mt-6">{{ home.media.lede | safe }}</p>
 
+      {% if home.media.tags | length %}
       <ul class="mt-8 space-y-4 text-cream-200/75 text-sm">
+        {% for tag in home.media.tags %}
         <li class="flex items-start gap-3">
           <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-burgundy-300 shrink-0"></span>
-          Korku · Maruz bırakma · Kalibrasyon
+          {{ tag }}
         </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-burgundy-300 shrink-0"></span>
-          Dikkat ekonomisi · bilişsel hijyen
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-burgundy-300 shrink-0"></span>
-          Direnç · yas · yeniden inşa
-        </li>
+        {% endfor %}
       </ul>
+      {% endif %}
     </div>
 
     <div class="lg:col-span-7 space-y-5">
-      {% youtube "ScMzIvxBSi4", "Nöroplastisite üzerine" %}
+      {% if home.media.main_video.id %}
+        {% youtube home.media.main_video.id, home.media.main_video.title %}
+      {% endif %}
+      {% if home.media.side_videos | length %}
       <div class="grid sm:grid-cols-2 gap-5">
-        {% youtube "iIKCdWeOzG8", "Korkuyla yüzleşmek" %}
-        {% youtube "Y6ljFaKRTrI", "Beyin çürümesi" %}
+        {% for v in home.media.side_videos %}
+          {% youtube v.id, v.title %}
+        {% endfor %}
       </div>
+      {% endif %}
     </div>
   </div>
 </section>
+{% endif %}
 
 
 {# ==========================================================================
    5. BÜLTEN
    ========================================================================== #}
+{% if home.newsletter.show %}
 <section id="bulten" class="section section-light relative overflow-hidden">
   <div class="container-academy max-w-3xl text-center">
     <p class="eyebrow flex items-center justify-center gap-3">
       <span class="divider"></span> {{ site.newsletter.title }} <span class="divider"></span>
     </p>
     <h2 class="heading-section mt-6 text-balance">
-      Ayda bir mektup.
-      <span class="italic text-burgundy-400">Gürültü yok, düşünce var.</span>
+      {{ home.newsletter.heading_prefix }}
+      <span class="italic text-burgundy-400">{{ home.newsletter.heading_accent }}</span>
     </h2>
     <p class="lede mt-6 mx-auto">{{ site.newsletter.description }}</p>
 
@@ -284,54 +268,59 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
              placeholder="ornek@eposta.com"
              class="input flex-1 text-center sm:text-left" />
       <input type="hidden" name="_subject" value="Bülten kaydı" />
-      <button type="submit" class="btn-primary justify-center">Abone Ol</button>
+      <button type="submit" class="btn-primary justify-center">{{ home.newsletter.submit_label }}</button>
     </form>
 
-    <p class="mt-4 text-xs text-ink-50/55">
-      İstediğiniz zaman ayrılabilirsiniz. Spam yok.
-    </p>
+    <p class="mt-4 text-xs text-ink-50/55">{{ home.newsletter.footnote }}</p>
   </div>
 </section>
+{% endif %}
 
 
 {# ==========================================================================
-   6. İLETİŞİM ("Stealth Funnel")
+   6. İLETİŞİM
    ========================================================================== #}
-<section id="iletisim" class="section relative overflow-hidden grain-overlay">
+{% if home.contact.show %}
+<section id="iletisim" class="section relative overflow-hidden {% if theme.show_grain_overlay %}grain-overlay{% endif %}">
   <div class="container-academy grid lg:grid-cols-12 gap-12">
 
     <div class="lg:col-span-5">
       <p class="eyebrow flex items-center gap-3">
-        <span class="divider"></span> Profesyonel İletişim
+        <span class="divider"></span> {{ home.contact.eyebrow }}
       </p>
       <h2 class="heading-section mt-6 text-cream-50 text-balance">
-        Profesyonel görüşme &
-        <span class="italic text-burgundy-200">akademik talepler.</span>
+        {{ home.contact.heading_prefix }}
+        <span class="italic text-burgundy-200">{{ home.contact.heading_accent }}</span>
       </h2>
-      <p class="lede mt-6">
-        Konferans davetleri, akademik işbirlikleri, kurumsal danışmanlık
-        ve seçili bireysel görüşme talepleri için iletişim formu.
-        Tüm mesajlar şahsen okunur.
-      </p>
+      <p class="lede mt-6">{{ home.contact.lede | safe }}</p>
 
+      {% if home.contact.info | length %}
       <ul class="mt-10 space-y-4 text-cream-200/75 text-sm">
+        {% for item in home.contact.info %}
         <li class="flex items-center gap-3">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-burgundy-200"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
-          <a href="mailto:{{ site.email }}" class="hover:text-cream-50">{{ site.email }}</a>
+          {% if item.icon == "envelope" %}
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-burgundy-200 shrink-0"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          {% elif item.icon == "clock" %}
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-burgundy-200 shrink-0"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          {% elif item.icon == "pin" %}
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-burgundy-200 shrink-0"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          {% elif item.icon == "phone" %}
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-burgundy-200 shrink-0"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+          {% else %}
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-burgundy-200 shrink-0"><circle cx="12" cy="12" r="8"/></svg>
+          {% endif %}
+          {% if item.href %}
+            <a href="{{ item.href }}" class="hover:text-cream-50">{{ item.text }}</a>
+          {% else %}
+            <span>{{ item.text }}</span>
+          {% endif %}
         </li>
-        <li class="flex items-center gap-3">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-burgundy-200"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          Yanıt süresi: 2 iş günü
-        </li>
-        <li class="flex items-center gap-3">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" class="text-burgundy-200"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          İstanbul · Türkiye
-        </li>
+        {% endfor %}
       </ul>
+      {% endif %}
     </div>
 
     <div class="lg:col-span-7">
-
       {% if site.form.typeformId %}
         <div data-tf-live="{{ site.form.typeformId }}" class="min-h-[520px]"></div>
         <script src="//embed.typeform.com/next/embed.js"></script>
@@ -342,15 +331,13 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
           <div>
             <label for="contact-name" class="eyebrow">İsim</label>
             <input id="contact-name" name="name" type="text" required
-                   placeholder="Ad Soyad"
-                   class="input-dark mt-2" />
+                   placeholder="Ad Soyad" class="input-dark mt-2" />
           </div>
 
           <div>
             <label for="contact-email" class="eyebrow">E-posta</label>
             <input id="contact-email" name="email" type="email" required
-                   placeholder="ornek@eposta.com"
-                   class="input-dark mt-2" />
+                   placeholder="ornek@eposta.com" class="input-dark mt-2" />
           </div>
 
           <div>
@@ -359,12 +346,9 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
                     class="input-dark mt-2 appearance-none cursor-pointer
                            [&>option]:bg-ink-400 [&>option]:text-cream-100">
               <option value="" disabled selected>Seçiniz</option>
-              <option value="akademik">Akademik işbirliği</option>
-              <option value="konferans">Konferans · konuşma daveti</option>
-              <option value="kurumsal">Kurumsal danışmanlık</option>
-              <option value="medya">Medya · röportaj</option>
-              <option value="bireysel">Bireysel görüşme talebi</option>
-              <option value="diger">Diğer</option>
+              {% for opt in home.contact.form_options %}
+              <option value="{{ opt.value }}">{{ opt.label }}</option>
+              {% endfor %}
             </select>
           </div>
 
@@ -378,12 +362,9 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
           <input type="hidden" name="_subject" value="Yeni iletişim formu mesajı" />
 
           <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
-            <p class="text-xs text-cream-200/50 max-w-sm">
-              Form gönderilerek bilgilerin yalnızca iletişim amacıyla işlenmesi
-              kabul edilmiş olur.
-            </p>
+            <p class="text-xs text-cream-200/50 max-w-sm">{{ home.contact.consent_text }}</p>
             <button type="submit" class="btn-primary">
-              Gönder
+              {{ home.contact.submit_label }}
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </button>
           </div>
@@ -392,3 +373,4 @@ description: "Klinik Nöropsikolog Gülşah Özgenç — zihin, eylem ve dirence
     </div>
   </div>
 </section>
+{% endif %}
