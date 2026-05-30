@@ -8,6 +8,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
 
+  eleventyConfig.addFilter("date", (dateObj) => {
+    return new Date(dateObj).toLocaleDateString('tr-TR', {
+      year: 'numeric', month: 'long', day: 'numeric'
+    });
+  });
   eleventyConfig.addShortcode("youtube", function (id, title = "Video") {
     return `<div class="aspect-video w-full overflow-hidden rounded-lg ring-1 ring-clay-400/10 shadow-soft">
       <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/${id}"

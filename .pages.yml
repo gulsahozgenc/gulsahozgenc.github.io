@@ -406,3 +406,21 @@ content:
               - { name: title, label: "Başlık / Pozisyon", type: string }
               - { name: institution, label: "Kurum / Yer", type: string }
               - { name: description, label: "Açıklama", type: text }
+
+  # ---------------------------------------------------------------- BLOG / MAKALELER
+  - name: blog
+    label: Klinik Makaleler
+    type: collection
+    path: src/blog
+    format: frontmatter
+    view:
+      fields: [title, date]
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - { name: title, label: Başlık, type: string, required: true }
+      - { name: summary, label: Kısa Özet (Alt Başlık), type: text, required: true }
+      - { name: date, label: Yayın Tarihi, type: date, required: true }
+      - { name: image, label: "Kapak Görseli (URL veya dosya yolu)", type: string }
+      - { name: content, label: Makale İçeriği, type: richtext }
