@@ -409,7 +409,7 @@ content:
 
   # ---------------------------------------------------------------- BLOG / MAKALELER
   - name: blog
-    label: Klinik Makaleler
+    label: Blog & Yazılar
     type: collection
     path: src/blog
     format: frontmatter

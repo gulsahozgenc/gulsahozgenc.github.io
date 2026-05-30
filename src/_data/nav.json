@@ -1,6 +1,6 @@
 [
   { "label": "Yaklaşım",    "href": "/#yaklasim" },
   { "label": "Özgeçmiş",    "href": "/cv/" },
-  { "label": "Makaleler",   "href": "/blog/" },
+  { "label": "Blog & Yazılar",   "href": "/blog/" },
   { "label": "İletişim",    "href": "/#iletisim" }
 ]
