@@ -273,6 +273,42 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
 
 
 {# ==========================================================================
+   5. SIKÇA SORULAN SORULAR
+   ========================================================================== #}
+{% if home.faq.show %}
+<section id="sss" class="section relative overflow-hidden">
+  <div class="container-academy max-w-3xl">
+    <div class="text-center mb-12">
+      <p class="eyebrow flex items-center justify-center gap-3">
+        <span class="divider"></span> {{ home.faq.eyebrow }} <span class="divider"></span>
+      </p>
+      <h2 class="heading-section mt-6 text-balance">
+        {{ home.faq.heading_prefix }}
+        <span class="italic text-sage-500">{{ home.faq.heading_accent }}</span>
+      </h2>
+    </div>
+
+    <div class="space-y-4">
+      {% for item in home.faq.items %}
+      <details class="group bg-white rounded-lg ring-1 ring-clay-400/8 hover:ring-sage-400/30 transition-all duration-200">
+        <summary class="flex items-center justify-between cursor-pointer p-5 md:p-6 font-serif text-lg text-clay-400 font-medium marker:content-none select-none [&::-webkit-details-marker]:hidden">
+          {{ item.question }}
+          <span class="ml-4 shrink-0 transition-transform duration-200 group-open:rotate-180 text-sage-500">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </span>
+        </summary>
+        <div class="px-5 md:px-6 pb-6 text-clay-200 leading-relaxed text-sm md:text-base border-t border-clay-400/5 pt-4">
+          {{ item.answer }}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+
+{# ==========================================================================
    6. İLETİŞİM
    ========================================================================== #}
 {% if home.contact.show %}

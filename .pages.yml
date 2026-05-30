@@ -200,6 +200,31 @@ content:
           content:
             merge: true
 
+      - name: home_faq
+        label: 4. Sıkça Sorulan Sorular (SSS)
+        type: file
+        path: src/_data/home.json
+        format: json
+        fields:
+          - name: faq
+            label: ""
+            type: object
+            fields:
+              - { name: show,            label: "Bu bölümü göster",       type: boolean }
+              - { name: eyebrow,         label: "Üst etiket",             type: string }
+              - { name: heading_prefix,  label: "Başlık - ön kısım",      type: string }
+              - { name: heading_accent,  label: "Başlık - vurgulu kısım", type: string }
+              - name: items
+                label: "Sorular ve Cevaplar"
+                type: object
+                list: true
+                fields:
+                  - { name: question, label: "Soru", type: string, required: true }
+                  - { name: answer, label: "Cevap", type: text, required: true }
+        settings:
+          content:
+            merge: true
+
       - name: home_media
         label: 4. Medya / Video
         type: file

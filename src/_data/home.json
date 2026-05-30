@@ -46,6 +46,30 @@
     "all_publications_label": "",
     "all_publications_url": ""
   },
+  "faq": {
+    "show": true,
+    "eyebrow": "Sıkça Sorulan Sorular",
+    "heading_prefix": "Süreç hakkında ",
+    "heading_accent": "bilinmesi gerekenler.",
+    "items": [
+      {
+        "question": "Seanslar ne kadar sürüyor ve hangi sıklıkla yapılıyor?",
+        "answer": "Bireysel terapi seansları 50 dakika sürmektedir. Sürecin başlangıcında, adaptasyon ve değerlendirme için seansların haftada bir yapılması önerilir. İlerleyen dönemde, ulaşılan hedeflere göre seans aralıkları iki haftada bir veya ayda bir olacak şekilde yeniden düzenlenebilir."
+      },
+      {
+        "question": "Online terapi yapıyor musunuz?",
+        "answer": "Evet, hem Türkiye içinden hem de yurt dışından başvuran danışanlar için güvenli platformlar üzerinden online terapi hizmeti sunuyorum. Nöropsikolojik değerlendirme ve çocuk yaş grubu testleri (WISC-R, Moxo, Denver vb.) ise materyal gereksinimi nedeniyle yalnızca yüz yüze yapılabilmektedir."
+      },
+      {
+        "question": "Çocuk ve ergen seanslarına ebeveynler dahil oluyor mu?",
+        "answer": "Çocuk ve ergen terapilerinde ilk görüşme her zaman ebeveynlerle (mümkünse anne ve baba birlikte) yapılır. Süreç boyunca belirli aralıklarla ebeveyn görüşmeleri gerçekleştirilerek geri bildirim verilir ve aile desteklenir. Ancak çocuğun seans içindeki mahremiyeti ve güven alanı her zaman korunur."
+      },
+      {
+        "question": "Nöropsikolojik test randevusu almak için doktor yönlendirmesi şart mı?",
+        "answer": "WISC-R, Moxo gibi zeka ve dikkat testleri ebeveynlerin talebiyle doğrudan yapılabilir. Ancak Alzheimer, Parkinson gibi nörodejeneratif hastalıkların değerlendirmesinde sürecin bir nöroloji veya psikiyatri hekiminin yönlendirmesiyle ilerlemesi tanı ve takip açısından çok daha verimlidir."
+      }
+    ]
+  },
   "media": {
     "show": false,
     "eyebrow": "",
