@@ -381,3 +381,28 @@ content:
     fields:
       - { name: label, label: Menü etiketi, type: string, required: true }
       - { name: href,  label: "Bağlantı (#bolum-id)", type: string, required: true }
+
+  # ---------------------------------------------------------------- ÖZGEÇMİŞ (CV)
+  - name: cv
+    label: Özgeçmiş Sayfası
+    type: file
+    path: src/_data/cv.json
+    format: json
+    fields:
+      - { name: title, label: "Sayfa Başlığı", type: string }
+      - { name: lede, label: "Sayfa Alt Başlığı / Giriş", type: text }
+      - name: sections
+        label: "Bölümler"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "Bölüm Başlığı (Örn: Eğitim Bilgileri)", type: string }
+          - name: items
+            label: "Girdiler"
+            type: object
+            list: true
+            fields:
+              - { name: year, label: "Yıl / Tarih", type: string }
+              - { name: title, label: "Başlık / Pozisyon", type: string }
+              - { name: institution, label: "Kurum / Yer", type: string }
+              - { name: description, label: "Açıklama", type: text }

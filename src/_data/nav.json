@@ -1,5 +1,6 @@
 [
-  { "label": "Yaklaşım",    "href": "#yaklasim" },
-  { "label": "Yayınlar",    "href": "#arastirma" },
-  { "label": "İletişim",    "href": "#iletisim" }
+  { "label": "Yaklaşım",    "href": "/#yaklasim" },
+  { "label": "Özgeçmiş",    "href": "/cv/" },
+  { "label": "Yayınlar",    "href": "/#arastirma" },
+  { "label": "İletişim",    "href": "/#iletisim" }
 ]
