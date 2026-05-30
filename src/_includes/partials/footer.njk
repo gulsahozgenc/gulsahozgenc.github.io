@@ -19,9 +19,8 @@
       <p class="eyebrow mb-4">İletişim</p>
       <ul class="space-y-2 text-sm">
         <li><a href="mailto:{{ site.email }}" class="hover:text-sage-500 transition-colors">{{ site.email }}</a></li>
-        <li><a href="{{ site.socials.linkedin }}" target="_blank" rel="noopener" class="hover:text-sage-500 transition-colors">LinkedIn</a></li>
-        <li><a href="{{ site.socials.youtube }}"  target="_blank" rel="noopener" class="hover:text-sage-500 transition-colors">YouTube</a></li>
-        <li><a href="{{ site.socials.academia }}" target="_blank" rel="noopener" class="hover:text-sage-500 transition-colors">Academia.edu</a></li>
+        {% if site.socials.instagram %}<li><a href="{{ site.socials.instagram }}" target="_blank" rel="noopener" class="hover:text-sage-500 transition-colors">Instagram</a></li>{% endif %}
+        {% if site.socials.linkedin %}<li><a href="{{ site.socials.linkedin }}" target="_blank" rel="noopener" class="hover:text-sage-500 transition-colors">LinkedIn</a></li>{% endif %}
       </ul>
     </div>
   </div>
