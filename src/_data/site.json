@@ -1,7 +1,7 @@
 {
   "title": "Gülşah Özgenç",
   "tagline": "Uzman Klinik Psikolog · Sinirbilim Doktora Adayı",
-  "description": "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değerlendirme, çocuk-ergen ve yetişkin psikoterapisi, EMDR, Şema Terapi ve BDT alanlarında klinik uzmanlık.",
+  "description": "Uzman Klinik Psikolog Gülşah Özgenç'in kişisel web sitesi. Bilişsel Davranışçı Terapi, Şema Terapi, EMDR ve Nöropsikolojik Değerlendirme alanlarında klinik hizmetler.",
   "url": "https://gulsahozgenc.com",
   "locale": "tr-TR",
   "lang": "tr",
@@ -9,12 +9,12 @@
   "email": "iletisim@gulsahozgenc.com",
   "socials": {
     "linkedin": "https://www.linkedin.com/in/gulsahozgenc/",
-    "youtube":  "https://www.youtube.com/",
-    "academia": "https://independent.academia.edu/"
+    "youtube":  "",
+    "academia": ""
   },
   "newsletter": {
-    "title": "Klinik Notlar",
-    "description": "Ayda bir; zihinsel sağlık, nöropsikoloji ve klinik pratiğe dair düşünce notları."
+    "title": "",
+    "description": ""
   },
   "form": {
     "formspreeId": "yourFormspreeID",

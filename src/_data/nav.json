@@ -1,7 +1,5 @@
 [
-  { "label": "Yaklaşım",    "href": "#felsefe" },
-  { "label": "Araştırma",   "href": "#arastirma" },
-  { "label": "Medya",       "href": "#medya" },
-  { "label": "Bülten",      "href": "#bulten" },
+  { "label": "Yaklaşım",    "href": "#yaklasim" },
+  { "label": "Yayınlar",    "href": "#arastirma" },
   { "label": "İletişim",    "href": "#iletisim" }
 ]

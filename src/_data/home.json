@@ -1,95 +1,87 @@
 {
   "hero": {
     "show_stats": true,
-    "eyebrow": "Klinik Nöropsikoloji · İstanbul",
-    "headline_prefix": "Beyin, davranış ve",
-    "headline_accent": "iyileşmenin",
-    "headline_suffix": "bilimi.",
-    "lede": "Uzman Klinik Psikolog · Sinirbilim Doktora Adayı. Nöropsikolojik değerlendirmeden çocuk-ergen terapisine, nörodejeneratif hastalıklardan kanıta dayalı psikoterapiye uzanan bütüncül bir klinik bakış.",
-    "cta_primary_label": "Uzmanlık Alanları",
-    "cta_primary_href": "#uzmanlik",
-    "cta_secondary_label": "İletişim",
+    "eyebrow": "Uzm. Klnk. Psk. · İstanbul",
+    "headline_prefix": "Klinik psikoloji ve",
+    "headline_accent": "nöropsikoloji",
+    "headline_suffix": "uzmanlığı.",
+    "lede": "Çocuk, ergen ve yetişkinlere yönelik kanıta dayalı psikoterapi süreçleri; nöropsikolojik ve bilişsel değerlendirme hizmetleri.",
+    "cta_primary_label": "Klinik Yaklaşım",
+    "cta_primary_href": "#yaklasim",
+    "cta_secondary_label": "Randevu Al",
     "cta_secondary_href": "#iletisim",
     "portrait_image": "/assets/img/portrait.jpg",
-    "portrait_alt": "Gülşah Özgenç portresi",
+    "portrait_alt": "Uzm. Klnk. Psk. Gülşah Özgenç",
     "portrait_caption_left": "Uzm. Klnk. Psk.",
-    "portrait_caption_right": "G. Özgenç",
+    "portrait_caption_right": "Gülşah Özgenç",
     "stats": [
-      { "value": "10+", "label_top": "Yıl",       "label_bottom": "Klinik deneyim" },
-      { "value": "9+",  "label_top": "Sertifika",  "label_bottom": "Uzmanlık eğitimi" },
-      { "value": "5+",  "label_top": "Kurum",      "label_bottom": "Klinik & hastane" }
+      { "value": "5+",  "label_top": "Yıl",       "label_bottom": "Klinik Deneyim" },
+      { "value": "10+", "label_top": "Eğitim",    "label_bottom": "Uzmanlık & Test Sertifikası" },
+      { "value": "5",   "label_top": "Kurum",     "label_bottom": "Hastane & Klinik Merkezi" }
     ]
   },
   "philosophy": {
     "show": true,
-    "eyebrow": "Klinik Yaklaşım",
-    "heading_prefix": "Yaşam boyu,",
-    "heading_accent": "kanıta dayalı bakım.",
+    "eyebrow": "Çalışma Alanları",
+    "heading_prefix": "Kanıta dayalı ve ",
+    "heading_accent": "bütüncül",
     "paragraphs": [
-      "Klinik pratiğim, bebeğinden yetişkinine yaşamın her döneminde <strong>nöropsikolojik değerlendirme</strong> ve <strong>kanıta dayalı müdahale</strong> üzerine kuruludur. Nörologlar ve beyin cerrahlarıyla iş birliği içinde, Alzheimer, Parkinson ve Epilepsi gibi nörodejeneratif hastalıklarda kapsamlı hasta değerlendirmeleri gerçekleştiriyorum.",
-      "Terapötik yaklaşımda <strong>EMDR</strong> (Emre Konuk eğitimi), <strong>Şema Terapi</strong> (ISST sertifikalı, Alp Karaosmanoğlu eğitimi) ve <strong>Bilişsel Davranışçı Terapi</strong> gibi kanıt temelli yöntemleri birleştiriyorum. Çocuk ve ergen alanında WISC-R, Denver II, Moxo dikkat testi ve disleksi müdahale protokolleriyle tanıdan tedaviye uzanan bütüncül bir süreç yürütüyorum.",
-      "Otizm spektrum bozuklukları ve öğrenme güçlüklerinde güçlü bir klinik deneyime sahibim. Medical Park Gaziosmanpaşa Hastanesi'nde tam zamanlı klinik psikolog olarak görev yapıyorum."
+      "Terapi süreçlerimde, çocuk, ergen ve yetişkin danışanlarımla ihtiyaçlarına en uygun, bilimsel olarak etkinliği kanıtlanmış yöntemlerle çalışıyorum. Yetişkinlerle olan seanslarımda ağırlıklı olarak <strong>Bilişsel Davranışçı Terapi (BDT)</strong>, <strong>Şema Terapi</strong> ve <strong>EMDR</strong> yaklaşımlarını temel alıyorum. Kaygı bozuklukları, depresyon, panik atak ve travma sonrası stres belirtileri gibi duygu durum zorluklarında yapılandırılmış bir tedavi planı sunuyorum.",
+      "Çocuk ve ergenlerde ise bilişsel süreçleri ve gelişimi yakından takip etmeye odaklanıyorum. Dikkat Eksikliği ve Hiperaktivite Bozukluğu (DEHB), özgül öğrenme güçlüğü (disleksi) ve davranışsal sorunların değerlendirilmesinde; WISC-R, Moxo Dikkat Testi, Denver II ve objektif nöropsikolojik testleri uyguluyor, bulgular doğrultusunda terapi ve eğitim sürecini şekillendiriyorum.",
+      "Psikoterapi pratiğime ek olarak, Medical Park Gaziosmanpaşa Hastanesi bünyesinde nöroloji ve beyin cerrahisi ekipleriyle çalışıyorum. Alzheimer, Parkinson ve epilepsi gibi nörodejeneratif hastalıkların takibinde kapsamlı nöropsikolojik değerlendirmeler gerçekleştiriyorum."
     ],
     "principles": [
-      { "title": "Nöropsikolojik Değerlendirme", "subtitle": "Beyin ve davranış arasındaki köprü." },
-      { "title": "Kanıta Dayalı Terapi",         "subtitle": "EMDR · Şema Terapi · BDT." },
-      { "title": "Yaşam Boyu Yaklaşım",           "subtitle": "Çocuktan yetişkine, bütüncül bakım." },
-      { "title": "Nörodejeneratif Hastalıklar",    "subtitle": "Alzheimer · Parkinson · Epilepsi." }
+      { "title": "Bilişsel Davranışçı & Şema Terapi", "subtitle": "Kaygı ve depresyonda güncel ve etkili ekoller." },
+      { "title": "EMDR Terapisi", "subtitle": "Travma ve zorlayıcı yaşam deneyimlerinin işlenmesi." },
+      { "title": "Nöropsikolojik Değerlendirme", "subtitle": "Bilişsel işlevlerin ve nörodejeneratif süreçlerin takibi." },
+      { "title": "Çocuk & Ergen Çalışmaları", "subtitle": "DEHB, öğrenme güçlüğü ve gelişimsel test uygulamaları." }
     ]
   },
   "research": {
     "show": true,
-    "eyebrow": "Akademik Portfolyo",
-    "heading_prefix": "Araştırma, yayın ve",
-    "heading_accent": "klinik katkılar.",
-    "lede": "Yüksek lisans tezi, klinik yazılar ve sağlık içerikleri. <em>Polislerde psikolojik sağlamlık</em>tan <em>kabul ve kararlılık terapisi</em>ne uzanan bir akademik perspektif.",
-    "all_publications_label": "Tüm yayınlar",
-    "all_publications_url": "#"
+    "eyebrow": "Yayın & Araştırma",
+    "heading_prefix": "Akademik ve",
+    "heading_accent": "klinik yazılar.",
+    "lede": "Sinirbilim ve klinik psikoloji arakesitindeki akademik çalışmalarım ve ruh sağlığı farkındalığını artırmaya yönelik kaleme aldığım içerikler.",
+    "all_publications_label": "",
+    "all_publications_url": ""
   },
   "media": {
-    "show": true,
-    "eyebrow": "Medya & İçgörü",
-    "heading_prefix": "Klinik bakış,",
-    "heading_accent": "herkes için.",
-    "lede": "Kısa metrajlı düşünce videoları, psikoloji ve nörobilim konularında görsel notlar. Zihinsel sağlık okuryazarlığını artırmak için tasarlandı.",
-    "tags": [
-      "Kaygı bozuklukları · Panik atak · OKB",
-      "DEHB · Disleksi · Öğrenme güçlükleri",
-      "Nöropsikoloji · Bilişsel değerlendirme"
-    ],
-    "main_video":  { "id": "ScMzIvxBSi4", "title": "Nöroplastisite üzerine" },
-    "side_videos": [
-      { "id": "iIKCdWeOzG8", "title": "Korkuyla yüzleşmek" },
-      { "id": "Y6ljFaKRTrI", "title": "Beyin çürümesi" }
-    ]
+    "show": false,
+    "eyebrow": "",
+    "heading_prefix": "",
+    "heading_accent": "",
+    "lede": "",
+    "tags": [],
+    "main_video":  { "id": "", "title": "" },
+    "side_videos": []
   },
   "newsletter": {
-    "show": true,
-    "heading_prefix": "Ayda bir mektup.",
-    "heading_accent": "Gürültü yok, düşünce var.",
-    "submit_label": "Abone Ol",
-    "footnote": "İstediğiniz zaman ayrılabilirsiniz. Spam yok."
+    "show": false,
+    "heading_prefix": "",
+    "heading_accent": "",
+    "submit_label": "",
+    "footnote": ""
   },
   "contact": {
     "show": true,
-    "eyebrow": "Profesyonel İletişim",
-    "heading_prefix": "Klinik randevu &",
-    "heading_accent": "akademik talepler.",
-    "lede": "Konferans davetleri, akademik işbirlikleri, kurumsal danışmanlık ve bireysel görüşme talepleri için iletişim formu. Tüm mesajlar şahsen okunur.",
+    "eyebrow": "Randevu",
+    "heading_prefix": "İletişim ve",
+    "heading_accent": "randevu.",
+    "lede": "Bireysel psikoterapi süreçleri, nöropsikolojik test uygulamaları veya akademik iş birliği talepleri için aşağıdaki formu doldurabilir ya da doğrudan e-posta üzerinden ulaşabilirsiniz.",
     "info": [
       { "icon": "envelope", "text": "iletisim@gulsahozgenc.com", "href": "mailto:iletisim@gulsahozgenc.com" },
-      { "icon": "clock",    "text": "Yanıt süresi: 2 iş günü", "href": "" },
-      { "icon": "pin",      "text": "İstanbul · Türkiye",      "href": "" }
+      { "icon": "pin",      "text": "İstanbul (Yüz Yüze & Online)", "href": "" },
+      { "icon": "clock",    "text": "İSÜ Medical Park GOP Hastanesi", "href": "" }
     ],
     "form_options": [
-      { "value": "randevu",    "label": "Bireysel görüşme / randevu" },
-      { "value": "akademik",   "label": "Akademik işbirliği" },
-      { "value": "konferans",  "label": "Konferans · konuşma daveti" },
-      { "value": "kurumsal",   "label": "Kurumsal danışmanlık" },
-      { "value": "medya",      "label": "Medya · röportaj" },
+      { "value": "yetiskin",   "label": "Terapi Randevusu (Yetişkin)" },
+      { "value": "cocuk",      "label": "Terapi Randevusu (Çocuk/Ergen)" },
+      { "value": "test",       "label": "Nöropsikolojik Test Uygulaması" },
+      { "value": "akademik",   "label": "Akademik / Kurumsal İş Birliği" },
       { "value": "diger",      "label": "Diğer" }
     ],
-    "submit_label": "Gönder",
-    "consent_text": "Form gönderilerek bilgilerin yalnızca iletişim amacıyla işlenmesi kabul edilmiş olur."
+    "submit_label": "Mesajı Gönder",
+    "consent_text": "Mesajınız bana doğrudan ulaşır ve klinik gizlilik ilkeleri kapsamında değerlendirilir."
   }
 }
