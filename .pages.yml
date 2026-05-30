@@ -34,12 +34,12 @@ content:
         description: "Tüm vurgu, buton ve italik kelime rengi."
         options:
           values:
+            - name: sage
+              label: Adaçayı Yeşili (sakin, klinik)
+            - name: teal
+              label: Okyanus Mavisi (ferah, modern)
             - name: burgundy
-              label: Bordo (vintage hırka kırmızısı)
-            - name: emerald
-              label: Koyu Zümrüt (akademik yeşil)
-            - name: bronze
-              label: Bronz (sıcak altın)
+              label: Bordo (klasik, güçlü)
       - name: show_grain_overlay
         label: Grain efekti (kağıt dokusu)
         type: boolean
