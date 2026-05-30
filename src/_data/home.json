@@ -2,60 +2,60 @@
   "hero": {
     "show_stats": true,
     "eyebrow": "Klinik Nöropsikoloji · İstanbul",
-    "headline_prefix": "Zihin ile eylemin",
-    "headline_accent": "kesişimlerini",
-    "headline_suffix": "keşfetmek.",
-    "lede": "Klinik Nöropsikolog · Araştırmacı · Düşünür. Dirence, nöroplastisiteye ve modern bireyin bilişsel hijyenine dair akademik bir bakış.",
-    "cta_primary_label": "Araştırmaları İncele",
-    "cta_primary_href": "#arastirma",
-    "cta_secondary_label": "İşbirliği",
+    "headline_prefix": "Beyin, davranış ve",
+    "headline_accent": "iyileşmenin",
+    "headline_suffix": "bilimi.",
+    "lede": "Uzman Klinik Psikolog · Sinirbilim Doktora Adayı. Nöropsikolojik değerlendirmeden çocuk-ergen terapisine, nörodejeneratif hastalıklardan kanıta dayalı psikoterapiye uzanan bütüncül bir klinik bakış.",
+    "cta_primary_label": "Uzmanlık Alanları",
+    "cta_primary_href": "#uzmanlik",
+    "cta_secondary_label": "İletişim",
     "cta_secondary_href": "#iletisim",
     "portrait_image": "/assets/img/portrait.jpg",
     "portrait_alt": "Gülşah Özgenç portresi",
-    "portrait_caption_left": "Portre · 2024",
+    "portrait_caption_left": "Uzm. Klnk. Psk.",
     "portrait_caption_right": "G. Özgenç",
     "stats": [
-      { "value": "12+", "label_top": "Yıl",     "label_bottom": "Klinik deneyim" },
-      { "value": "30+", "label_top": "Yayın",   "label_bottom": "Akademik çalışma" },
-      { "value": "40+", "label_top": "Konuşma", "label_bottom": "Konferans · panel" }
+      { "value": "10+", "label_top": "Yıl",       "label_bottom": "Klinik deneyim" },
+      { "value": "9+",  "label_top": "Sertifika",  "label_bottom": "Uzmanlık eğitimi" },
+      { "value": "5+",  "label_top": "Kurum",      "label_bottom": "Klinik & hastane" }
     ]
   },
   "philosophy": {
     "show": true,
-    "eyebrow": "Felsefe",
-    "heading_prefix": "Terapi değil,",
-    "heading_accent": "yeniden kalibrasyon.",
+    "eyebrow": "Klinik Yaklaşım",
+    "heading_prefix": "Yaşam boyu,",
+    "heading_accent": "kanıta dayalı bakım.",
     "paragraphs": [
-      "Klinik pratiğim, zihni bir <em>onarılması gereken arıza</em> olarak değil; sürekli kendini yeniden kuran, esnek bir mimari olarak görür. Burada amaç rahatlatmak değil, <strong>fark etmektir.</strong>",
-      "Korkunun, yasın ve sürekli akan dijital uyaranların altında kalan dikkati geri kazanmak için <strong>nöroplastisiteyi</strong> bir araç olarak kullanıyorum. Maruz bırakma, yapısal sessizlik ve estetik düzenleme; modern bireyin bilişsel hijyenini inşa eden üç sütun.",
-      "Çalışma alanım dirençle başlar, nöro-estetikle genişler, akademik soruşturmayla derinleşir. Hedef; danışanın benden değil, kendi karar mekanizmasından beslenmesini sağlamaktır."
+      "Klinik pratiğim, bebeğinden yetişkinine yaşamın her döneminde <strong>nöropsikolojik değerlendirme</strong> ve <strong>kanıta dayalı müdahale</strong> üzerine kuruludur. Nörologlar ve beyin cerrahlarıyla iş birliği içinde, Alzheimer, Parkinson ve Epilepsi gibi nörodejeneratif hastalıklarda kapsamlı hasta değerlendirmeleri gerçekleştiriyorum.",
+      "Terapötik yaklaşımda <strong>EMDR</strong> (Emre Konuk eğitimi), <strong>Şema Terapi</strong> (ISST sertifikalı, Alp Karaosmanoğlu eğitimi) ve <strong>Bilişsel Davranışçı Terapi</strong> gibi kanıt temelli yöntemleri birleştiriyorum. Çocuk ve ergen alanında WISC-R, Denver II, Moxo dikkat testi ve disleksi müdahale protokolleriyle tanıdan tedaviye uzanan bütüncül bir süreç yürütüyorum.",
+      "Otizm spektrum bozuklukları ve öğrenme güçlüklerinde güçlü bir klinik deneyime sahibim. Medical Park Gaziosmanpaşa Hastanesi'nde tam zamanlı klinik psikolog olarak görev yapıyorum."
     ],
     "principles": [
-      { "title": "Nöroplastisite",            "subtitle": "Beyin yeniden örülür." },
-      { "title": "Direnç",                    "subtitle": "Kırılgan değil, esnek." },
-      { "title": "Korkuyla yüzleşme",         "subtitle": "Kaçınmak, büyümeyi durdurur." },
-      { "title": "Beyin çürümesini aşmak",    "subtitle": "Dikkat, çağın para birimi." }
+      { "title": "Nöropsikolojik Değerlendirme", "subtitle": "Beyin ve davranış arasındaki köprü." },
+      { "title": "Kanıta Dayalı Terapi",         "subtitle": "EMDR · Şema Terapi · BDT." },
+      { "title": "Yaşam Boyu Yaklaşım",           "subtitle": "Çocuktan yetişkine, bütüncül bakım." },
+      { "title": "Nörodejeneratif Hastalıklar",    "subtitle": "Alzheimer · Parkinson · Epilepsi." }
     ]
   },
   "research": {
     "show": true,
     "eyebrow": "Akademik Portfolyo",
-    "heading_prefix": "Beyin çürümesinin panzehiri:",
-    "heading_accent": "derin okuma.",
-    "lede": "Yayınlanmış makaleler, araştırma notları ve düşünce yazıları. Hepsi tek bir soruya bağlı: <em>Modern zihin nasıl iyileşir?</em>",
+    "heading_prefix": "Araştırma, yayın ve",
+    "heading_accent": "klinik katkılar.",
+    "lede": "Yüksek lisans tezi, klinik yazılar ve sağlık içerikleri. <em>Polislerde psikolojik sağlamlık</em>tan <em>kabul ve kararlılık terapisi</em>ne uzanan bir akademik perspektif.",
     "all_publications_label": "Tüm yayınlar",
     "all_publications_url": "#"
   },
   "media": {
     "show": true,
     "eyebrow": "Medya & İçgörü",
-    "heading_prefix": "Sinematik düşünme.",
-    "heading_accent": "Sessiz, ama keskin.",
-    "lede": "Kısa metrajlı düşünce videoları, anlatım eşliğinde kavramları açan görsel notlar. Beyin çürümesinin panzehiri olarak tasarlandı.",
+    "heading_prefix": "Klinik bakış,",
+    "heading_accent": "herkes için.",
+    "lede": "Kısa metrajlı düşünce videoları, psikoloji ve nörobilim konularında görsel notlar. Zihinsel sağlık okuryazarlığını artırmak için tasarlandı.",
     "tags": [
-      "Korku · Maruz bırakma · Kalibrasyon",
-      "Dikkat ekonomisi · bilişsel hijyen",
-      "Direnç · yas · yeniden inşa"
+      "Kaygı bozuklukları · Panik atak · OKB",
+      "DEHB · Disleksi · Öğrenme güçlükleri",
+      "Nöropsikoloji · Bilişsel değerlendirme"
     ],
     "main_video":  { "id": "ScMzIvxBSi4", "title": "Nöroplastisite üzerine" },
     "side_videos": [
@@ -73,20 +73,20 @@
   "contact": {
     "show": true,
     "eyebrow": "Profesyonel İletişim",
-    "heading_prefix": "Profesyonel görüşme &",
+    "heading_prefix": "Klinik randevu &",
     "heading_accent": "akademik talepler.",
-    "lede": "Konferans davetleri, akademik işbirlikleri, kurumsal danışmanlık ve seçili bireysel görüşme talepleri için iletişim formu. Tüm mesajlar şahsen okunur.",
+    "lede": "Konferans davetleri, akademik işbirlikleri, kurumsal danışmanlık ve bireysel görüşme talepleri için iletişim formu. Tüm mesajlar şahsen okunur.",
     "info": [
       { "icon": "envelope", "text": "iletisim@gulsahozgenc.com", "href": "mailto:iletisim@gulsahozgenc.com" },
       { "icon": "clock",    "text": "Yanıt süresi: 2 iş günü", "href": "" },
       { "icon": "pin",      "text": "İstanbul · Türkiye",      "href": "" }
     ],
     "form_options": [
+      { "value": "randevu",    "label": "Bireysel görüşme / randevu" },
       { "value": "akademik",   "label": "Akademik işbirliği" },
       { "value": "konferans",  "label": "Konferans · konuşma daveti" },
       { "value": "kurumsal",   "label": "Kurumsal danışmanlık" },
       { "value": "medya",      "label": "Medya · röportaj" },
-      { "value": "bireysel",   "label": "Bireysel görüşme talebi" },
       { "value": "diger",      "label": "Diğer" }
     ],
     "submit_label": "Gönder",

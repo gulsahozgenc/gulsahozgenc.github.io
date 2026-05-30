@@ -1,56 +1,29 @@
 [
   {
-    "title": "Nöroplastisite ve Korkuyla Yüzleşme: Klinik Bir Çerçeve",
+    "title": "Polislerde Öz Denetim, Sosyal Sorun Çözme Becerisi, Psikolojik Sağlamlık ve Duyguları İfade Etme Arasındaki İlişkilerin İncelenmesi",
     "type": "Hakemli Makale",
-    "year": 2024,
-    "venue": "Türk Nöropsikoloji Dergisi",
-    "summary": "Korku temelli kaçınma örüntülerinin yeniden kodlanmasında deneyimsel maruz bırakma ve sinaptik esnekliğin rolü.",
+    "year": 2022,
+    "venue": "Yayınlanmış Yüksek Lisans Tezi · Arel Üniversitesi",
+    "summary": "Polis memurlarında öz denetim, sosyal problem çözme becerisi, psikolojik dayanıklılık ve duygu ifadesi arasındaki ilişkilerin kapsamlı analizi.",
     "icon": "brain",
     "url": "#"
   },
   {
-    "title": "Beyin Çürümesi (Brainrot): Dijital Aşırı Uyarımın Bilişsel Bedeli",
-    "type": "Konferans Bildirisi",
-    "year": 2024,
-    "venue": "Ulusal Psikoloji Kongresi",
-    "summary": "Sürekli kısa-form içerik tüketiminin dikkat ağı, prefrontal düzenleme ve içsel motivasyon üzerindeki ölçülebilir etkileri.",
-    "icon": "spiral",
-    "url": "#"
-  },
-  {
-    "title": "Direnç İnşası: Travma Sonrası Bilişsel Yeniden Yapılanma",
-    "type": "Kitap Bölümü",
-    "year": 2023,
-    "venue": "Çağdaş Klinik Yaklaşımlar",
-    "summary": "Yas, kayıp ve uzun süreli stresin ardından kimliğin yeniden örüldüğü nöro-bilişsel mimari.",
+    "title": "İstanbul Medipol Üniversitesi Okul Birinciliği",
+    "type": "Ödül",
+    "year": 2016,
+    "venue": "İstanbul Medipol Üniversitesi",
+    "summary": "%100 Başarı Bursu ile ödüllendirilen okul birinciliği başarısı.",
     "icon": "compass",
-    "url": "#"
+    "url": ""
   },
   {
-    "title": "Estetik Algı ve Duygu Düzenleme",
-    "type": "Araştırma Notu",
-    "year": 2023,
-    "venue": "Akademik Blog",
-    "summary": "Görsel-işitsel uyaranlarla duygulanım modülasyonu; sinema ve müziğin terapötik bir araç olarak konumlandırılması.",
-    "icon": "eye",
-    "url": "#"
-  },
-  {
-    "title": "Yetişkinlikte Bağlanma Şemalarının Nörobiyolojik İzleri",
-    "type": "Hakemli Makale",
-    "year": 2022,
-    "venue": "Klinik Psikoloji Araştırmaları",
-    "summary": "Erken dönem ilişkisel kalıpların yetişkin karar mekanizmaları ve sosyal bilişe yansıması.",
-    "icon": "thread",
-    "url": "#"
-  },
-  {
-    "title": "Sessizlik Aralığı: Modern Birey için Bilişsel Hijyen",
-    "type": "Deneme",
-    "year": 2022,
-    "venue": "Akademik Blog",
-    "summary": "Aşırı uyarılma çağında dikkati geri kazanmak için pratik bir çerçeve; meditasyon ötesi bir yaklaşım.",
-    "icon": "moon",
-    "url": "#"
+    "title": "TÜBİTAK Coğrafya Alanı Projesi",
+    "type": "Ödül",
+    "year": 2014,
+    "venue": "TÜBİTAK",
+    "summary": "TÜBİTAK tarafından desteklenen coğrafya alanındaki araştırma projesi.",
+    "icon": "spiral",
+    "url": ""
   }
 ]
