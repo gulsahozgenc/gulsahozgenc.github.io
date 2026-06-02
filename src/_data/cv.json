@@ -1,134 +1,46 @@
 {
   "title": "Özgeçmiş",
-  "lede": "Akademik eğitimim, klinik deneyimlerim ve aldığım uzmanlık sertifikalarının kronolojik özeti.",
+  "lede": "Klinik pratiğini bilimsel yaklaşımlarla şekillendiren, nöropsikolojik değerlendirme ve psikoterapi alanlarında uzman klinik psikolog.",
   "sections": [
     {
       "title": "Eğitim Bilgileri",
       "items": [
-        {
-          "year": "2023 - Devam",
-          "title": "Sinirbilim Doktora (Ph.D.)",
-          "institution": "İstinye Üniversitesi",
-          "description": "Nörodejeneratif hastalıklar ve bilişsel rezerv üzerine çalışmalar."
-        },
-        {
-          "year": "2019 - 2022",
-          "title": "Klinik Psikoloji Yüksek Lisans (M.Sc.)",
-          "institution": "İstanbul Arel Üniversitesi",
-          "description": "Tez: Polislerde Öz Denetim, Sosyal Sorun Çözme Becerisi, Psikolojik Sağlamlık ve Duyguları İfade Etme Arasındaki İlişkilerin İncelenmesi"
-        },
-        {
-          "year": "2015 - 2019",
-          "title": "Psikoloji Lisans (B.A.)",
-          "institution": "İstanbul Medipol Üniversitesi",
-          "description": "%100 Başarı Bursu ve Okul Birinciliği"
-        },
-        {
-          "year": "2016 - 2020",
-          "title": "Sağlık Yönetimi Lisans (B.A.)",
-          "institution": "Anadolu Üniversitesi",
-          "description": "Çift Anadal Programı"
-        }
+        { "year": "2023 - Devam", "title": "Sinirbilim Doktora (Ph.D.)", "institution": "İstinye Üniversitesi", "description": "Nörodejeneratif hastalıklar ve bilişsel rezerv üzerine çalışmalar." },
+        { "year": "2019 - 2022", "title": "Klinik Psikoloji Yüksek Lisans (M.Sc.)", "institution": "İstanbul Arel Üniversitesi", "description": "Tez: Polislerde Öz Denetim, Sosyal Sorun Çözme Becerisi, Psikolojik Sağlamlık ve Duyguları İfade Etme Arasındaki İlişkilerin İncelenmesi" },
+        { "year": "2015 - 2019", "title": "Psikoloji Lisans (B.A.)", "institution": "İstanbul Medipol Üniversitesi", "description": "%100 Başarı Bursu ve Okul Birinciliği" },
+        { "year": "2016 - 2020", "title": "Sağlık Yönetimi Lisans (B.A.)", "institution": "Anadolu Üniversitesi", "description": "Çift Anadal Programı" }
       ]
     },
     {
       "title": "Klinik Deneyim",
       "items": [
-        {
-          "year": "Eki 2022 - Devam",
-          "title": "Uzman Klinik Psikolog",
-          "institution": "Medical Park Gaziosmanpaşa Hastanesi",
-          "description": "Nöroloji, Psikiyatri ve Beyin Cerrahisi kliniklerinde tam zamanlı klinik psikolog. Bireysel psikoterapi ve nöropsikolojik değerlendirmeler."
-        },
-        {
-          "year": "Tem 2021 - Eyl 2022",
-          "title": "Uzman Klinik Psikolog",
-          "institution": "Bi'Şey Seans Psikolojik Danışmanlık Merkezi",
-          "description": "Yetişkin ve ergen gruplarıyla süpervizyon destekli psikoterapi seansları."
-        },
-        {
-          "year": "Ağu 2020 - Oca 2021",
-          "title": "Klinik Psikolog",
-          "institution": "Vital Psikoloji",
-          "description": "Bireysel danışmanlık ve psikolojik test uygulamaları."
-        },
-        {
-          "year": "Ağu 2019 - Tem 2020",
-          "title": "Klinik Psikolog",
-          "institution": "Atlas Psikoloji",
-          "description": "Klinik değerlendirme asistanlığı ve vaka takibi."
-        },
-        {
-          "year": "Tem 2018 - Eyl 2018",
-          "title": "Klinik Psikoloji Stajyeri",
-          "institution": "Bakırköy Prof. Dr. Mazhar Osman Ruh Sağlığı ve Sinir Hastalıkları E.A.H.",
-          "description": "Poliklinik ve yataklı servis gözlemi, vaka formülasyonlarına katılım."
-        }
+        { "year": "Ekim 2022 - Günümüz", "title": "Uzman Klinik Psikolog", "institution": "Medical Park Gaziosmanpaşa Hastanesi", "description": "Alzheimer, Parkinson, epilepsi ve psikoonkoloji hastalarında nöropsikolojik değerlendirmeler. Nöroloji ve çocuk psikiyatrisi birimleri ile koordineli test uygulamaları (Denver II, Moxo, WISC-R, Disleksi) ve psikoterapi." },
+        { "year": "Eylül 2021 - Eylül 2022", "title": "Uzman Klinik Psikolog", "institution": "Vital Psikolojik Danışmanlık Merkezi", "description": "Depresyon, anksiyete, travma gibi ruh sağlığı sorunlarında bireyselleştirilmiş psikoterapi planlarının uygulanması." },
+        { "year": "Haziran 2021 - Eylül 2021", "title": "Klinik Psikolog", "institution": "Bi'Şey Seans Psikolojik Danışmanlık Merkezi", "description": "BDT, Şema Terapi ve EMDR terapi ekolleri çerçevesinde kanıta dayalı psikoterapi süreçlerinin yürütülmesi." },
+        { "year": "Aralık 2019 - Aralık 2020", "title": "Psikolog ve Eğitimci", "institution": "Atlas Psikolojik Danışmanlık Merkezi", "description": "Profesyonellere yönelik WISC-R eğitimlerinin verilmesi; Mini Mental, Porteus, Cattell ve Beck testlerinin klinik uygulaması." },
+        { "year": "2018", "title": "Stajyer Psikolog", "institution": "Bakırköy Prof. Dr. Mazhar Osman Ruh Sağlığı ve Sinir Hastalıkları E.A.H.", "description": "Erkek Kapalı Servisinde ağır kişilik bozuklukları ve psikiyatrik tanılı hastalarla çalışma, grup/bireysel terapi süreçleri ve vizit katılımı." }
       ]
     },
     {
       "title": "Uzmanlık Sertifikaları ve Eğitimler",
       "items": [
-        {
-          "year": "2022",
-          "title": "EMDR 1. Düzey Eğitimi",
-          "institution": "Davranış Bilimleri Enstitüsü (Emre Konuk)",
-          "description": "Göz Hareketleriyle Duyarsızlaştırma ve Yeniden İşleme terapisi."
-        },
-        {
-          "year": "2021",
-          "title": "Şema Terapi Temel Düzey Eğitimi",
-          "institution": "ISST (Alp Karaosmanoğlu)",
-          "description": "Uluslararası Şema Terapi Derneği onaylı klinik eğitim."
-        },
-        {
-          "year": "2020",
-          "title": "Bilişsel Davranışçı Psikoterapiler",
-          "institution": "BDPD (Hakan Türkçapar)",
-          "description": "Yetişkinlerde BDT kuram ve uygulamaları."
-        },
-        {
-          "year": "2021",
-          "title": "Çocuk ve Ergen BDT Eğitimi",
-          "institution": "Vahdet Görmez",
-          "description": "Çocuk ve ergen grubunda bilişsel yapılandırma."
-        },
-        {
-          "year": "2020",
-          "title": "WISC-R Zeka Testi",
-          "institution": "Türk Psikologlar Derneği",
-          "description": "Çocuklar için Wechsler Zeka Ölçeği uygulama yetkinliği."
-        },
-        {
-          "year": "2020",
-          "title": "Nöropsikolojik Testler Eğitimi",
-          "institution": "Türk Psikologlar Derneği",
-          "description": "Stroop, İşaretleme, Çizgi Yönü, Sayı Dizileri vb. testler."
-        },
-        {
-          "year": "2021",
-          "title": "Moxo Dikkat Testi",
-          "institution": "Moxo Türkiye",
-          "description": "Bilgisayar tabanlı objektif dikkat ölçümü."
-        },
-        {
-          "year": "2019",
-          "title": "Denver II Gelişimsel Tarama Testi",
-          "institution": "Gelişim Çocuk",
-          "description": "Erken çocukluk dönemi gelişimsel tarama testi."
-        },
-        {
-          "year": "2020",
-          "title": "Çocuk Merkezli Oyun Terapisi",
-          "institution": "Mehmet Teber",
-          "description": "Yönlendirmesiz oyun terapisi yaklaşımları."
-        },
-        {
-          "year": "2019",
-          "title": "Psiko-onkoloji Eğitimi",
-          "institution": "İstanbul Üniversitesi",
-          "description": "Kanser hastaları ve yakınlarına yönelik psikolojik destek süreçleri."
-        }
+        { "year": "2024", "title": "EMDR Eğitimi", "institution": "Davranış Bilimleri Enstitüsü (Emre Konuk)", "description": "Göz Hareketleriyle Duyarsızlaştırma ve Yeniden İşleme terapisi." },
+        { "year": "2024", "title": "Psikoonkoloji Eğitimi", "institution": "Dr. Esra Savaş", "description": "Kanser hastaları ve yakınlarına yönelik psikolojik destek süreçleri." },
+        { "year": "2023 - 2024", "title": "Şema Terapi Temel Düzey Eğitimi", "institution": "Şema Terapi Derneği (Alp Karaosmanoğlu)", "description": "Uluslararası standartlarda kişilik ve duygu durum çalışmaları." },
+        { "year": "2023 - 2024", "title": "Nöropsikolojik Değerlendirme Eğitimi", "institution": "Prof. Dr. Öget Öktem Tanör (Nöropsikoloji Derneği)", "description": "Türkiye'de nöropsikolojinin kurucusundan alınan kapsamlı klinik test bataryası eğitimi." },
+        { "year": "2022 - 2023", "title": "Disleksi ve BUMPRO Eğitimi", "institution": "Disleksi Derneği", "description": "Özgül öğrenme güçlüğü değerlendirmesi ve müdahale programları." },
+        { "year": "2022 - 2023", "title": "Çocuk ve Ergenlerde BDT Teknikleri", "institution": "Başkent Psikoloji (Dr. Nevin Dölek)", "description": "Çocuk ve ergen grubunda bilişsel davranışçı yapılandırma." },
+        { "year": "2021 - 2022", "title": "DEHB ve Moxo Dikkat Testi", "institution": "Dr. Hülya Bingöl Çağlayan / Moxo Türkiye", "description": "Dikkat Eksikliği ve Hiperaktivite Bozukluğu klinik değerlendirmesi." },
+        { "year": "2020 - 2021", "title": "Sınav Kaygısı Yönetimi", "institution": "İzmir Psikoloji Enstitüsü", "description": "Performans kaygısı yönetimi." },
+        { "year": "2020 - 2021", "title": "Çözüm Odaklı Terapi", "institution": "Sarı Psikoloji", "description": "Kısa süreli terapötik müdahaleler." }
+      ]
+    },
+    {
+      "title": "Mesleki Üyelikler",
+      "items": [
+        { "year": "Üye", "title": "American Psychological Association (APA)", "institution": "APA", "description": "Uluslararası mesleki standartlar ve akademik ağ üyeliği." },
+        { "year": "Üye", "title": "Nöropsikoloji Derneği", "institution": "Türkiye", "description": "Nöropsikoloji araştırma ve klinik uygulamaları ağı." },
+        { "year": "Üye", "title": "EMDR Derneği", "institution": "Türkiye", "description": "Travma odaklı klinik yaklaşımları destekleyen profesyonel ağ." }
       ]
     }
   ]

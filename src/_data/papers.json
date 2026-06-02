@@ -1,5 +1,32 @@
 [
   {
+    "title": "MoCA ve Mini Mental Testin Karşılaştırılmalı Duyarlılığı: Hafif Bilişsel Bozukluk ve Demans Alt Tiplerinde Retrospektif Bir Analiz",
+    "type": "Konferans Bildirisi",
+    "year": 2025,
+    "venue": "15. Ulusal Alzheimer Kongresi",
+    "summary": "Hafif bilişsel bozukluk ve demans alt tiplerinde nöropsikolojik testlerin duyarlılığının incelendiği sözlü bildiri sunumu.",
+    "icon": "brain",
+    "url": ""
+  },
+  {
+    "title": "Demansın Nöropsikolojik Değerlendirmesi",
+    "type": "Kitap Bölümü",
+    "year": 2025,
+    "venue": "Klinik Pratikte Nöroloji (Nobel Tıp Kitabevleri)",
+    "summary": "Klinik Pratikte Nöroloji kitabında demans değerlendirme süreçlerini ele alan akademik kitap bölümü.",
+    "icon": "spiral",
+    "url": ""
+  },
+  {
+    "title": "Romantik İlişkilerde Doyumun Yordayıcısı Olarak Aile Aidiyeti: Üniversite Öğrencileri Örneği",
+    "type": "Hakemli Makale",
+    "year": 2025,
+    "venue": "DergiPark",
+    "summary": "Üniversite öğrencilerinde aile aidiyetinin romantik ilişki doyumu üzerindeki etkisinin incelenmesi.",
+    "icon": "thread",
+    "url": ""
+  },
+  {
     "title": "Polislerde Öz Denetim, Sosyal Sorun Çözme Becerisi, Psikolojik Sağlamlık ve Duyguları İfade Etme Arasındaki İlişkilerin İncelenmesi",
     "type": "Hakemli Makale",
     "year": 2022,
@@ -23,7 +50,7 @@
     "year": 2014,
     "venue": "TÜBİTAK",
     "summary": "TÜBİTAK tarafından desteklenen coğrafya alanındaki araştırma projesi.",
-    "icon": "spiral",
+    "icon": "star",
     "url": ""
   }
 ]
