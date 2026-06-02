@@ -264,6 +264,7 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
              placeholder="ornek@eposta.com"
              class="input flex-1 text-center sm:text-left" />
       <input type="hidden" name="_subject" value="Bülten kaydı" />
+      <input type="hidden" name="_next" value="{{ site.url }}/tesekkurler/" />
       <button type="submit" class="btn-primary justify-center">{{ home.newsletter.submit_label }}</button>
     </form>
 
@@ -371,6 +372,7 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
       {% else %}
         <form action="https://formspree.io/f/{{ site.form.formspreeId }}" method="POST"
               class="bg-white ring-1 ring-clay-400/8 rounded-lg p-6 md:p-10 space-y-6 shadow-soft">
+          <input type="hidden" name="_next" value="{{ site.url }}/tesekkurler/" />
 
           <div>
             <label for="contact-name" class="eyebrow">İsim</label>
