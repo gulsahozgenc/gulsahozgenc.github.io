@@ -101,7 +101,7 @@
     "form_options": [
       { "value": "yetiskin",   "label": "Bireysel Danışmanlık (Yetişkin)" },
       { "value": "cocuk",      "label": "Bireysel Danışmanlık (Çocuk/Ergen)" },
-      { "value": "test",       "label": "Nöropsikolojik Test Uygulaması" },
+      { "value": "test",       "label": "Nöropsikolojik Değerlendirme" },
       { "value": "akademik",   "label": "Akademik / Kurumsal İş Birliği" },
       { "value": "diger",      "label": "Diğer" }
     ],
