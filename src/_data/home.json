@@ -91,21 +91,20 @@
     "show": true,
     "eyebrow": "İletişim",
     "heading_prefix": "İletişim ve",
-    "heading_accent": "danışma.",
-    "lede": "Bireysel danışmanlık süreçleri, nöropsikolojik test uygulamaları veya akademik iş birliği talepleri için aşağıdaki formu doldurabilir ya da doğrudan e-posta üzerinden ulaşabilirsiniz.",
+    "heading_accent": "bilgi.",
+    "lede": "Akademik çalışmalar, bilimsel iş birlikleri, eğitim talepleri veya genel sorularınız için aşağıdaki formu doldurabilir ya da doğrudan e-posta üzerinden ulaşabilirsiniz.",
     "info": [
       { "icon": "envelope", "text": "iletisim@gulsahozgenc.com", "href": "mailto:iletisim@gulsahozgenc.com" },
-      { "icon": "pin",      "text": "İstanbul (Yüz Yüze & Online)", "href": "" },
+      { "icon": "pin",      "text": "İstanbul", "href": "" },
       { "icon": "clock",    "text": "İSÜ Medical Park GOP Hastanesi", "href": "" }
     ],
     "form_options": [
-      { "value": "yetiskin",   "label": "Bireysel Danışmanlık (Yetişkin)" },
-      { "value": "cocuk",      "label": "Bireysel Danışmanlık (Çocuk/Ergen)" },
-      { "value": "test",       "label": "Nöropsikolojik Değerlendirme" },
-      { "value": "akademik",   "label": "Akademik / Kurumsal İş Birliği" },
-      { "value": "diger",      "label": "Diğer" }
+      { "value": "akademik",   "label": "Akademik ve Bilimsel İş Birliği" },
+      { "value": "egitim",     "label": "Seminer / Eğitim Talebi" },
+      { "value": "kurumsal",   "label": "Kurumsal İletişim" },
+      { "value": "bilgi",      "label": "Soru ve Bilgi Talebi" }
     ],
     "submit_label": "Mesajı Gönder",
-    "consent_text": "Mesajınız bana doğrudan ulaşır ve klinik gizlilik ilkeleri kapsamında değerlendirilir."
+    "consent_text": "Mesajınız bana doğrudan ulaşır ve gizlilik ilkeleri kapsamında değerlendirilir."
   }
 }
