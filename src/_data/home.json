@@ -5,10 +5,10 @@
     "headline_prefix": "Klinik psikoloji ve",
     "headline_accent": "nöropsikoloji",
     "headline_suffix": "uzmanlığı.",
-    "lede": "Çocuk, ergen ve yetişkinlere yönelik kanıta dayalı psikoterapi süreçleri; nöropsikolojik ve bilişsel değerlendirme hizmetleri.",
+    "lede": "Çocuk, ergen ve yetişkinlere yönelik kanıta dayalı klinik değerlendirme süreçleri; nöropsikolojik ve bilişsel danışmanlık hizmetleri.",
     "cta_primary_label": "Klinik Yaklaşım",
     "cta_primary_href": "#yaklasim",
-    "cta_secondary_label": "Randevu Al",
+    "cta_secondary_label": "İletişim",
     "cta_secondary_href": "#iletisim",
     "portrait_image": "/assets/img/portrait.jpg?v=2",
     "portrait_alt": "Uzm. Klnk. Psk. Gülşah Özgenç",
@@ -26,14 +26,14 @@
     "heading_prefix": "Kanıta dayalı ve ",
     "heading_accent": "bütüncül",
     "paragraphs": [
-      "Terapi süreçlerimde, çocuk, ergen ve yetişkin danışanlarımla ihtiyaçlarına en uygun, bilimsel olarak etkinliği kanıtlanmış yöntemlerle çalışıyorum. Yetişkinlerle olan seanslarımda ağırlıklı olarak <strong>Bilişsel Davranışçı Terapi (BDT)</strong>, <strong>Şema Terapi</strong> ve <strong>EMDR</strong> yaklaşımlarını temel alıyorum. Kaygı bozuklukları, depresyon, panik atak ve travma sonrası stres belirtileri gibi duygu durum zorluklarında yapılandırılmış bir tedavi planı sunuyorum.",
-      "Çocuk ve ergenlerde ise bilişsel süreçleri ve gelişimi yakından takip etmeye odaklanıyorum. Dikkat Eksikliği ve Hiperaktivite Bozukluğu (DEHB), özgül öğrenme güçlüğü (disleksi) ve davranışsal sorunların değerlendirilmesinde; WISC-R, Moxo Dikkat Testi, Denver II ve objektif nöropsikolojik testleri uyguluyor, bulgular doğrultusunda terapi ve eğitim sürecini şekillendiriyorum.",
-      "Psikoterapi pratiğime ek olarak, Medical Park Gaziosmanpaşa Hastanesi bünyesinde nöroloji ve beyin cerrahisi ekipleriyle çalışıyorum. Alzheimer, Parkinson ve epilepsi gibi nörodejeneratif hastalıkların takibinde kapsamlı nöropsikolojik değerlendirmeler gerçekleştiriyorum."
+      "Klinik pratiğimde, çocuk, ergen ve yetişkin bireylerle ihtiyaçlarına en uygun, bilimsel olarak etkinliği kanıtlanmış yöntemlerle çalışıyorum. Yetişkinlerle olan değerlendirme ve yapılandırma süreçlerimde ağırlıklı olarak <strong>Bilişsel Davranışçı Yaklaşım (BDT)</strong>, <strong>Şema Yaklaşımı</strong> ve <strong>EMDR</strong> prensiplerini temel alıyorum. Kaygı, depresyon, panik ve travma sonrası stres belirtileri gibi durumlarda kanıta dayalı bir destek süreci sunuyorum.",
+      "Çocuk ve ergenlerde ise bilişsel süreçleri ve gelişimi yakından takip etmeye odaklanıyorum. Dikkat Eksikliği ve Hiperaktivite Bozukluğu (DEHB), özgül öğrenme güçlüğü (disleksi) ve davranışsal sorunların değerlendirilmesinde; WISC-R, Moxo Dikkat Testi, Denver II ve objektif nöropsikolojik testleri uyguluyor, bulgular doğrultusunda danışmanlık sürecini şekillendiriyorum.",
+      "Tüm bu çalışmalara ek olarak, İSÜ Medical Park Gaziosmanpaşa Hastanesi bünyesinde nöroloji ve beyin cerrahisi ekipleriyle çalışıyorum. Alzheimer, Parkinson ve epilepsi gibi hastalıkların takibinde multidisipliner bir yaklaşımla kapsamlı nöropsikolojik değerlendirmeler gerçekleştiriyorum."
     ],
     "principles": [
-      { "title": "Bilişsel Davranışçı & Şema Terapi", "subtitle": "Kaygı ve depresyonda güncel ve etkili ekoller." },
-      { "title": "EMDR Terapisi", "subtitle": "Travma ve zorlayıcı yaşam deneyimlerinin işlenmesi." },
-      { "title": "Nöropsikolojik Değerlendirme", "subtitle": "Bilişsel işlevlerin ve nörodejeneratif süreçlerin takibi." },
+      { "title": "Bilişsel Davranışçı & Şema Yaklaşımı", "subtitle": "Kaygı ve depresyonda güncel ve etkili ekoller." },
+      { "title": "EMDR Uygulamaları", "subtitle": "Travma ve zorlayıcı yaşam deneyimlerinin işlenmesi." },
+      { "title": "Nöropsikolojik Değerlendirme", "subtitle": "Bilişsel işlevlerin ve klinik süreçlerin takibi." },
       { "title": "Çocuk & Ergen Çalışmaları", "subtitle": "DEHB, öğrenme güçlüğü ve gelişimsel test uygulamaları." }
     ]
   },
@@ -53,20 +53,20 @@
     "heading_accent": "bilinmesi gerekenler.",
     "items": [
       {
-        "question": "Seanslar ne kadar sürüyor ve hangi sıklıkla yapılıyor?",
-        "answer": "Bireysel terapi seansları 45 dakika sürmektedir. Sürecin başlangıcında, adaptasyon ve değerlendirme için seansların haftada bir yapılması önerilir. İlerleyen dönemde, ulaşılan hedeflere göre seans aralıkları iki haftada bir veya ayda bir olacak şekilde yeniden düzenlenebilir."
+        "question": "Görüşmeler ne kadar sürüyor ve hangi sıklıkla yapılıyor?",
+        "answer": "Bireysel danışmanlık görüşmeleri 45 dakika sürmektedir. Sürecin başlangıcında, adaptasyon ve klinik değerlendirme için görüşmelerin haftada bir yapılması önerilir. İlerleyen dönemde, ulaşılan hedeflere göre bu aralıklar iki haftada bir veya ayda bir olacak şekilde yeniden düzenlenebilir."
       },
       {
-        "question": "Online terapi yapıyor musunuz?",
-        "answer": "Evet, hem Türkiye içinden hem de yurt dışından başvuran danışanlar için güvenli platformlar üzerinden online terapi hizmeti sunuyorum. Nöropsikolojik değerlendirme ve çocuk yaş grubu testleri (WISC-R, Moxo, Denver vb.) ise materyal gereksinimi nedeniyle yalnızca yüz yüze yapılabilmektedir."
+        "question": "Online görüşme desteği sağlıyor musunuz?",
+        "answer": "Evet, hem Türkiye içinden hem de yurt dışından başvuran bireyler için güvenli platformlar üzerinden online psikolojik destek sağlıyorum. Nöropsikolojik değerlendirme ve çocuk yaş grubu testleri (WISC-R, Moxo, Denver vb.) ise materyal gereksinimi nedeniyle yalnızca yüz yüze yapılabilmektedir."
       },
       {
-        "question": "Çocuk ve ergen seanslarına ebeveynler dahil oluyor mu?",
-        "answer": "Çocuk ve ergen terapilerinde ilk görüşme her zaman ebeveynlerle (mümkünse anne ve baba birlikte) yapılır. Süreç boyunca belirli aralıklarla ebeveyn görüşmeleri gerçekleştirilerek geri bildirim verilir ve aile desteklenir. Ancak çocuğun seans içindeki mahremiyeti ve güven alanı her zaman korunur."
+        "question": "Çocuk ve ergen değerlendirmelerine ebeveynler dahil oluyor mu?",
+        "answer": "Çocuk ve ergen süreçlerinde ilk görüşme her zaman ebeveynlerle (mümkünse anne ve baba birlikte) yapılır. Süreç boyunca belirli aralıklarla ebeveyn görüşmeleri gerçekleştirilerek geri bildirim verilir ve aile desteklenir. Ancak çocuğun görüşme içindeki mahremiyeti ve güven alanı her zaman korunur."
       },
       {
-        "question": "Nöropsikolojik test randevusu almak için doktor yönlendirmesi şart mı?",
-        "answer": "WISC-R, Moxo gibi zeka ve dikkat testleri ebeveynlerin talebiyle doğrudan yapılabilir. Ancak Alzheimer, Parkinson gibi nörodejeneratif hastalıkların değerlendirmesinde sürecin bir nöroloji veya psikiyatri hekiminin yönlendirmesiyle ilerlemesi tanı ve takip açısından çok daha verimlidir."
+        "question": "Nöropsikolojik değerlendirme için doktor yönlendirmesi şart mı?",
+        "answer": "WISC-R, Moxo gibi zeka ve dikkat testleri ebeveynlerin talebiyle doğrudan yapılabilir. Ancak Alzheimer, Parkinson gibi nörodejeneratif süreçlerin değerlendirmesinde klinik takibin bir nöroloji veya psikiyatri hekiminin yönlendirmesiyle ilerlemesi tanı ve takip açısından çok daha verimlidir."
       }
     ]
   },
@@ -89,18 +89,18 @@
   },
   "contact": {
     "show": true,
-    "eyebrow": "Randevu",
+    "eyebrow": "İletişim",
     "heading_prefix": "İletişim ve",
-    "heading_accent": "randevu.",
-    "lede": "Bireysel psikoterapi süreçleri, nöropsikolojik test uygulamaları veya akademik iş birliği talepleri için aşağıdaki formu doldurabilir ya da doğrudan e-posta üzerinden ulaşabilirsiniz.",
+    "heading_accent": "danışma.",
+    "lede": "Bireysel danışmanlık süreçleri, nöropsikolojik test uygulamaları veya akademik iş birliği talepleri için aşağıdaki formu doldurabilir ya da doğrudan e-posta üzerinden ulaşabilirsiniz.",
     "info": [
       { "icon": "envelope", "text": "iletisim@gulsahozgenc.com", "href": "mailto:iletisim@gulsahozgenc.com" },
       { "icon": "pin",      "text": "İstanbul (Yüz Yüze & Online)", "href": "" },
       { "icon": "clock",    "text": "İSÜ Medical Park GOP Hastanesi", "href": "" }
     ],
     "form_options": [
-      { "value": "yetiskin",   "label": "Terapi Randevusu (Yetişkin)" },
-      { "value": "cocuk",      "label": "Terapi Randevusu (Çocuk/Ergen)" },
+      { "value": "yetiskin",   "label": "Bireysel Danışmanlık (Yetişkin)" },
+      { "value": "cocuk",      "label": "Bireysel Danışmanlık (Çocuk/Ergen)" },
       { "value": "test",       "label": "Nöropsikolojik Test Uygulaması" },
       { "value": "akademik",   "label": "Akademik / Kurumsal İş Birliği" },
       { "value": "diger",      "label": "Diğer" }
