@@ -99,6 +99,7 @@
       { "icon": "clock",    "text": "İSÜ Medical Park GOP Hastanesi", "href": "" }
     ],
     "form_options": [
+      { "value": "hastane",    "label": "Medical Park Randevu Bilgisi" },
       { "value": "akademik",   "label": "Akademik ve Bilimsel İş Birliği" },
       { "value": "egitim",     "label": "Seminer / Eğitim Talebi" },
       { "value": "kurumsal",   "label": "Kurumsal İletişim" },
