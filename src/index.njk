@@ -201,7 +201,8 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
    ========================================================================== #}
 {% if home.media.show %}
 <section id="medya" class="section section-alt relative overflow-hidden">
-  <div class="container-academy grid lg:grid-cols-12 gap-12 items-start">
+  <div class="container-academy">
+    <div class="grid lg:grid-cols-12 gap-12 items-start">
 
     <div class="lg:col-span-5">
       <p class="eyebrow flex items-center gap-3">
@@ -237,14 +238,19 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
       </div>
       {% endif %}
 
-      <div class="grid sm:grid-cols-2 gap-5 mt-8">
-        {% if home.media.main_video.id %}
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-12 md:mt-16">
+      {% if home.media.main_video.id %}
+        <div class="w-full">
           {% youtube home.media.main_video.id, home.media.main_video.title %}
-        {% endif %}
-        {% for v in home.media.side_videos %}
+        </div>
+      {% endif %}
+      {% for v in home.media.side_videos %}
+        <div class="w-full">
           {% youtube v.id, v.title %}
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
