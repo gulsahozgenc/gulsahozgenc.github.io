@@ -85,14 +85,15 @@
     "lede": "Ruh sağlığı ve sinirbilim alanındaki haberlerim, dijital platformlardaki yayınlarım ve katıldığım video podcast'ler.",
     "tags": ["Psikoloji", "Sinirbilim", "Nöropsikoloji"],
     "articles": [
-      { "source": "Hürriyet Sağlık", "title": "Ergenlikte Artan Ekran Sürelerinin Bilişsel Etkileri", "url": "#" },
-      { "source": "NTV Haber", "title": "Alzheimer ve Erken Teşhiste Nöropsikolojinin Rolü", "url": "#" },
-      { "source": "Sabah", "title": "Sınav Kaygısı İle Baş Etme Yöntemleri Nelerdir?", "url": "#" },
-      { "source": "Posta Gazetesi", "title": "Şema Terapi İle Duygusal Blokajlardan Kurtulmak", "url": "#" },
-      { "source": "Sözcü Sağlık", "title": "Pandemi Sonrası Artan Sosyal Fobi Vakaları", "url": "#" }
+      { "source": "Cumhuriyet", "title": "Ara Tatil İçin Uzmanından Uyarı: Kritik Bir Dönem", "url": "https://www.cumhuriyet.com.tr/yasam/ara-tatil-icin-uzmanindan-uyari-cocuklarin-ruh-sagligi-icin-kritik-bir-donem-2470461" },
+      { "source": "Yeniçağ Gazetesi", "title": "Yarıyıl Tatili İçin Ailelere 10 Öneri", "url": "https://www.yenicaggazetesi.com/yariyil-tatili-icin-ailelere-10-oneri-878597h.htm" },
+      { "source": "İstikbal Gazetesi", "title": "Dikkat Eksikliği Öğrenme Güçlüğüne Neden Olabilir", "url": "https://www.istikbalgazetesi.com/dikkat-eksikligi-ogrenme-guclugune-neden-olabilir" },
+      { "source": "Cumhuriyet", "title": "Çocuklara Bayram Harçlığı Verilirken Abartıya Kaçılmamalı", "url": "https://www.cumhuriyet.com.tr/yasam/cocuklara-bayram-harcligi-verilirken-abartiya-kacilmamali-2073495" }
     ],
-    "main_video":  { "id": "dQw4w9WgXcQ", "title": "Örnek Medya Yayını" },
-    "side_videos": []
+    "main_video":  { "id": "Z1wMPQ0HsVE", "title": "Klinik Görüş ve Değerlendirmeler" },
+    "side_videos": [
+      { "id": "1qsziCUsMzM", "title": "Klinik Görüş ve Değerlendirmeler" }
+    ]
   },
   "newsletter": {
     "show": false,
