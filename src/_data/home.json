@@ -71,24 +71,11 @@
     ]
   },
   "testimonials": {
-    "show": true,
+    "show": false,
     "eyebrow": "Danışan Değerlendirmeleri",
     "heading_prefix": "Klinik süreç",
     "heading_accent": "deneyimleri.",
-    "items": [
-      {
-        "quote": "Terapiye başlarken çok kaygılıydım ama klinik yaklaşımı ve bilimsel açıklamalarıyla süreci çok rahat geçirmemi sağladı. Panik ataklarımla başa çıkmayı öğrendim.",
-        "author": "Yetişkin Danışan"
-      },
-      {
-        "quote": "Çocuğumuzun dikkat eksikliği şüphesiyle başvurduk. Hem test sürecindeki detaylı yaklaşımı hem de sonrasındaki ebeveyn danışmanlığı çok aydınlatıcıydı.",
-        "author": "Ebeveyn (Çocuk)"
-      },
-      {
-        "quote": "Nöropsikolojik değerlendirme sürecini o kadar profesyonel yürüttü ki, doktorumuz da rapora çok güvenerek tedavi planını şekillendirdi.",
-        "author": "Hasta Yakını"
-      }
-    ]
+    "items": []
   },
   "media": {
     "show": true,
