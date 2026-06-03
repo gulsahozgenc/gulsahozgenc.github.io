@@ -16,6 +16,14 @@
     "href": "/blog/"
   },
   {
+    "label": "Medya",
+    "href": "/#medya"
+  },
+  {
+    "label": "SSS",
+    "href": "/#sss"
+  },
+  {
     "label": "Mini Test",
     "href": "/test/"
   }
