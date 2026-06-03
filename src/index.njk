@@ -241,7 +241,7 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
         {% youtube home.media.main_video.id, home.media.main_video.title %}
       {% endif %}
       {% if home.media.side_videos | length %}
-      <div class="grid sm:grid-cols-2 gap-5">
+      <div class="space-y-5 mt-5">
         {% for v in home.media.side_videos %}
           {% youtube v.id, v.title %}
         {% endfor %}

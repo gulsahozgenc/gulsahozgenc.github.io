@@ -88,7 +88,8 @@
       { "source": "Cumhuriyet", "title": "Ara Tatil İçin Uzmanından Uyarı: Kritik Bir Dönem", "url": "https://www.cumhuriyet.com.tr/yasam/ara-tatil-icin-uzmanindan-uyari-cocuklarin-ruh-sagligi-icin-kritik-bir-donem-2470461" },
       { "source": "Yeniçağ Gazetesi", "title": "Yarıyıl Tatili İçin Ailelere 10 Öneri", "url": "https://www.yenicaggazetesi.com/yariyil-tatili-icin-ailelere-10-oneri-878597h.htm" },
       { "source": "İstikbal Gazetesi", "title": "Dikkat Eksikliği Öğrenme Güçlüğüne Neden Olabilir", "url": "https://www.istikbalgazetesi.com/dikkat-eksikligi-ogrenme-guclugune-neden-olabilir" },
-      { "source": "Cumhuriyet", "title": "Çocuklara Bayram Harçlığı Verilirken Abartıya Kaçılmamalı", "url": "https://www.cumhuriyet.com.tr/yasam/cocuklara-bayram-harcligi-verilirken-abartiya-kacilmamali-2073495" }
+      { "source": "Cumhuriyet", "title": "Çocuklara Bayram Harçlığı Verilirken Abartıya Kaçılmamalı", "url": "https://www.cumhuriyet.com.tr/yasam/cocuklara-bayram-harcligi-verilirken-abartiya-kacilmamali-2073495" },
+      { "source": "Ege'de Sonsöz", "title": "Sömestr Tatilinde Aile İçi İletişimin Rolü", "url": "https://www.egedesonsoz.com/haber/uzmanindan-uyari-cocuklarin-ruh-sagligi-icin-kritik-bir-donem/1164923" }
     ],
     "main_video":  { "id": "Z1wMPQ0HsVE", "title": "Klinik Görüş ve Değerlendirmeler" },
     "side_videos": [
@@ -113,7 +114,7 @@
       { "icon": "pin",      "text": "İstanbul", "href": "" },
       { "icon": "clock",    "text": "İSÜ Medical Park GOP Hastanesi", "href": "" }
     ],
-    "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x14cab1277a1fc16d%3A0xc3f58a361ef2ed7a!2sMedical%20Park%20Gaziosmanpa%C5%9Fa%20Hastanesi!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str\" width=\"100%\" height=\"220\" style=\"border:0; border-radius: 8px;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "map_embed": "<iframe src=\"https://maps.google.com/maps?q=Medical%20Park%20Gaziosmanpa%C5%9Fa%20Hastanesi&t=&z=13&ie=UTF8&iwloc=&output=embed\" width=\"100%\" height=\"220\" style=\"border:0; border-radius: 8px;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
     "form_options": [
       { "value": "hastane",    "label": "Medical Park Randevu Bilgisi" },
       { "value": "akademik",   "label": "Akademik ve Bilimsel İş Birliği" },
