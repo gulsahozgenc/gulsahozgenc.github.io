@@ -225,7 +225,18 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
       {% endif %}
     </div>
 
-    <div class="lg:col-span-7 space-y-5">
+    <div class="lg:col-span-7 space-y-8">
+      {% if home.media.articles | length %}
+      <div class="grid sm:grid-cols-2 gap-4">
+        {% for article in home.media.articles %}
+        <a href="{{ article.url }}" target="_blank" rel="noopener" class="group flex flex-col p-5 rounded-lg ring-1 ring-clay-400/8 bg-white hover:ring-sage-400/30 transition-all shadow-soft hover:shadow-paper">
+          <span class="text-xs font-mono text-sage-500 mb-2">{{ article.source }}</span>
+          <h3 class="font-serif text-clay-400 font-medium group-hover:text-sage-600 transition-colors">{{ article.title }}</h3>
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
       {% if home.media.main_video.id %}
         {% youtube home.media.main_video.id, home.media.main_video.title %}
       {% endif %}
@@ -273,6 +284,41 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
 </section>
 {% endif %}
 
+
+{# ==========================================================================
+   TESTIMONIALS
+   ========================================================================== #}
+{% if home.testimonials.show %}
+<section id="yorumlar" class="section bg-sage-500/5 relative overflow-hidden">
+  <div class="container-academy">
+    <div class="text-center mb-12">
+      <p class="eyebrow flex items-center justify-center gap-3">
+        <span class="divider"></span> {{ home.testimonials.eyebrow }} <span class="divider"></span>
+      </p>
+      <h2 class="heading-section mt-6 text-balance">
+        {{ home.testimonials.heading_prefix }}
+        <span class="italic text-sage-500">{{ home.testimonials.heading_accent }}</span>
+      </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      {% for item in home.testimonials.items %}
+      <div class="bg-white p-8 rounded-lg shadow-soft ring-1 ring-clay-400/5 flex flex-col h-full">
+        <div class="flex gap-1 text-sage-400 mb-4">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="text-clay-200 text-sm leading-relaxed mb-6 flex-1">"{{ item.quote }}"</p>
+        <p class="text-xs font-mono font-medium text-clay-400 uppercase tracking-widest">{{ item.author }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
 
 {# ==========================================================================
    5. SIKÇA SORULAN SORULAR
@@ -361,6 +407,10 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           Instagram'dan Danışın
         </a>
+      </div>
+      {% if home.contact.map_embed %}
+      <div class="mt-10 rounded-lg overflow-hidden ring-1 ring-clay-400/8 shadow-soft bg-white/50 p-2">
+        {{ home.contact.map_embed | safe }}
       </div>
       {% endif %}
     </div>

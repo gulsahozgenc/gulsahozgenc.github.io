@@ -1,0 +1,126 @@
+---
+layout: layouts/base.njk
+title: Beck Depresyon Envanteri
+permalink: /test/index.html
+---
+<div class="pt-32 pb-24 min-h-screen bg-warm-200">
+  <div class="container-academy max-w-3xl">
+    <div class="text-center mb-10">
+      <p class="eyebrow flex items-center justify-center gap-3">
+        <span class="divider"></span> Öz Değerlendirme <span class="divider"></span>
+      </p>
+      <h1 class="heading-display mb-4 mt-4">Depresyon Envanteri</h1>
+      <p class="lede">Aşağıdaki soruları son iki haftanızı göz önünde bulundurarak cevaplayınız. Bu test bir tıbbi tanı aracı değildir, yalnızca mevcut ruh haliniz hakkında bir ön fikir verme amacı taşır.</p>
+    </div>
+
+    <div class="bg-white p-6 md:p-10 rounded-lg shadow-soft ring-1 ring-clay-400/5">
+      <form id="beckTestForm" class="space-y-6">
+        <div id="questionsContainer" class="space-y-6"></div>
+        <button type="button" onclick="calculateScore()" class="btn-primary w-full justify-center mt-8 py-3">Sonucu Hesapla</button>
+      </form>
+
+      <div id="resultContainer" class="hidden mt-10 p-8 bg-sage-500/10 rounded-lg text-center border border-sage-500/20">
+        <h3 class="font-serif text-2xl text-clay-400 mb-2">Ön Değerlendirme Puanınız</h3>
+        <p id="scoreText" class="text-5xl font-light text-sage-600 mb-4">0</p>
+        <p id="resultDescription" class="text-clay-300 font-medium mb-6"></p>
+        <p class="text-sm text-clay-100 italic bg-white/60 p-4 rounded-md">Yasal Uyarı: Bu dijital testin sonucu kesin tıbbi bir tanı ifade etmez. Eğer zorlu bir süreçten geçtiğinizi hissediyorsanız, doğru klinik değerlendirme için lütfen profesyonel destek alınız.</p>
+        <a href="/#iletisim" class="btn-primary mt-6 inline-flex shadow-soft">Klinik İletişim Formuna Git</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Psikolojide en bilinen 5 temel madde (Demo versiyonu)
+  const questions = [
+    {
+      title: "1. Üzüntü Hali",
+      options: [
+        { text: "Kendimi üzüntülü ve sıkıntılı hissetmiyorum.", score: 0 },
+        { text: "Kendimi zaman zaman üzüntülü hissediyorum.", score: 1 },
+        { text: "Hep üzüntülü ve sıkıntılıyım, bundan kurtulamıyorum.", score: 2 },
+        { text: "O kadar üzüntülü ve mutsuzum ki artık dayanamıyorum.", score: 3 }
+      ]
+    },
+    {
+      title: "2. Gelecek Kaygısı",
+      options: [
+        { text: "Gelecek hakkında umutsuz değilim.", score: 0 },
+        { text: "Gelecek için zaman zaman karamsarlığa kapılıyorum.", score: 1 },
+        { text: "Gelecekten beklediğim hiçbir şey yok.", score: 2 },
+        { text: "Geleceğim hakkında umutsuzum ve hiçbir şey düzelmeyecekmiş gibi geliyor.", score: 3 }
+      ]
+    },
+    {
+      title: "3. Başarısızlık Hissi",
+      options: [
+        { text: "Kendimi başarısız bir insan olarak görmüyorum.", score: 0 },
+        { text: "Çevremdeki birçok kişiden daha çok başarısızlığım olmuş gibi hissediyorum.", score: 1 },
+        { text: "Geriye dönüp baktığımda çok fazla başarısızlığım olduğunu görüyorum.", score: 2 },
+        { text: "Kendimi tam bir başarısızlık örneği olarak görüyorum.", score: 3 }
+      ]
+    },
+    {
+      title: "4. Hayattan Zevk Alma",
+      options: [
+        { text: "Her şeyden eskisi kadar zevk alıyorum.", score: 0 },
+        { text: "Eskiden olduğu gibi her şeyden zevk almıyorum.", score: 1 },
+        { text: "Artık hiçbir şeyden gerçek bir zevk alamıyorum.", score: 2 },
+        { text: "Bana zevk veren hiçbir şey yok. Her şey çok anlamsız.", score: 3 }
+      ]
+    },
+    {
+      title: "5. Suçluluk Duygusu",
+      options: [
+        { text: "Kendimi herhangi bir şekilde suçlu hissetmiyorum.", score: 0 },
+        { text: "Zaman zaman kendimi bir şeylerden dolayı suçlu hissediyorum.", score: 1 },
+        { text: "Çoğu zaman kendimi suçlu hissediyorum.", score: 2 },
+        { text: "Kendimi her zaman ve her şey için çok suçlu hissediyorum.", score: 3 }
+      ]
+    }
+  ];
+
+  const container = document.getElementById('questionsContainer');
+  questions.forEach((q, qIndex) => {
+    let html = `<div class="p-5 border border-clay-400/10 rounded-lg hover:border-sage-400/30 transition-colors"><h3 class="font-medium text-clay-400 mb-4">${q.title}</h3><div class="space-y-3">`;
+    q.options.forEach((opt, oIndex) => {
+      html += `
+        <label class="flex items-start gap-3 cursor-pointer p-3 hover:bg-warm-100 rounded transition-colors group">
+          <input type="radio" name="q${qIndex}" value="${opt.score}" class="mt-0.5 text-sage-500 focus:ring-sage-500 border-clay-400/30">
+          <span class="text-clay-200 text-sm group-hover:text-clay-400">${opt.text}</span>
+        </label>
+      `;
+    });
+    html += `</div></div>`;
+    container.innerHTML += html;
+  });
+
+  function calculateScore() {
+    let score = 0;
+    let allAnswered = true;
+    for(let i=0; i<questions.length; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      if(selected) {
+        score += parseInt(selected.value);
+      } else {
+        allAnswered = false;
+      }
+    }
+
+    if(!allAnswered) {
+      alert("Lütfen sonucu görmek için tüm soruları yanıtlayınız.");
+      return;
+    }
+
+    document.getElementById('scoreText').innerText = score;
+    let desc = "";
+    if (score <= 3) desc = "Genel ruh haliniz stabil görünüyor. Belirgin bir depresif bulgu saptanmadı.";
+    else if (score <= 7) desc = "Hafif düzeyde depresif belirtiler taşıyorsunuz. Hayatınızdaki stres faktörlerini gözden geçirmeniz faydalı olabilir.";
+    else if (score <= 11) desc = "Orta düzeyde depresif belirtiler saptandı. Günlük işlevselliğinizi etkileyen bu durum için klinik destek almanız önerilir.";
+    else desc = "Şiddetli depresif belirtiler mevcut. En kısa sürede bir ruh sağlığı uzmanıyla görüşmeniz büyük önem taşımaktadır.";
+    
+    document.getElementById('resultDescription').innerText = desc;
+    document.getElementById('resultContainer').classList.remove('hidden');
+    document.getElementById('resultContainer').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>

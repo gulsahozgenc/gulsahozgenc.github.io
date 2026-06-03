@@ -14,5 +14,9 @@
   {
     "label": "Blog & Yazılar",
     "href": "/blog/"
+  },
+  {
+    "label": "Mini Test",
+    "href": "/test/"
   }
 ]

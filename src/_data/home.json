@@ -70,14 +70,41 @@
       }
     ]
   },
+  "testimonials": {
+    "show": true,
+    "eyebrow": "Danışan Değerlendirmeleri",
+    "heading_prefix": "Klinik süreç",
+    "heading_accent": "deneyimleri.",
+    "items": [
+      {
+        "quote": "Terapiye başlarken çok kaygılıydım ama klinik yaklaşımı ve bilimsel açıklamalarıyla süreci çok rahat geçirmemi sağladı. Panik ataklarımla başa çıkmayı öğrendim.",
+        "author": "Yetişkin Danışan"
+      },
+      {
+        "quote": "Çocuğumuzun dikkat eksikliği şüphesiyle başvurduk. Hem test sürecindeki detaylı yaklaşımı hem de sonrasındaki ebeveyn danışmanlığı çok aydınlatıcıydı.",
+        "author": "Ebeveyn (Çocuk)"
+      },
+      {
+        "quote": "Nöropsikolojik değerlendirme sürecini o kadar profesyonel yürüttü ki, doktorumuz da rapora çok güvenerek tedavi planını şekillendirdi.",
+        "author": "Hasta Yakını"
+      }
+    ]
+  },
   "media": {
-    "show": false,
-    "eyebrow": "",
-    "heading_prefix": "",
-    "heading_accent": "",
-    "lede": "",
-    "tags": [],
-    "main_video":  { "id": "", "title": "" },
+    "show": true,
+    "eyebrow": "Medyada Ben",
+    "heading_prefix": "Basın ve",
+    "heading_accent": "dijital medya.",
+    "lede": "Ruh sağlığı ve sinirbilim alanındaki haberlerim, dijital platformlardaki yayınlarım ve katıldığım video podcast'ler.",
+    "tags": ["Psikoloji", "Sinirbilim", "Nöropsikoloji"],
+    "articles": [
+      { "source": "Hürriyet Sağlık", "title": "Ergenlikte Artan Ekran Sürelerinin Bilişsel Etkileri", "url": "#" },
+      { "source": "NTV Haber", "title": "Alzheimer ve Erken Teşhiste Nöropsikolojinin Rolü", "url": "#" },
+      { "source": "Sabah", "title": "Sınav Kaygısı İle Baş Etme Yöntemleri Nelerdir?", "url": "#" },
+      { "source": "Posta Gazetesi", "title": "Şema Terapi İle Duygusal Blokajlardan Kurtulmak", "url": "#" },
+      { "source": "Sözcü Sağlık", "title": "Pandemi Sonrası Artan Sosyal Fobi Vakaları", "url": "#" }
+    ],
+    "main_video":  { "id": "dQw4w9WgXcQ", "title": "Örnek Medya Yayını" },
     "side_videos": []
   },
   "newsletter": {
@@ -98,6 +125,7 @@
       { "icon": "pin",      "text": "İstanbul", "href": "" },
       { "icon": "clock",    "text": "İSÜ Medical Park GOP Hastanesi", "href": "" }
     ],
+    "map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x14cab1277a1fc16d%3A0xc3f58a361ef2ed7a!2sMedical%20Park%20Gaziosmanpa%C5%9Fa%20Hastanesi!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str\" width=\"100%\" height=\"220\" style=\"border:0; border-radius: 8px;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "form_options": [
       { "value": "hastane",    "label": "Medical Park Randevu Bilgisi" },
       { "value": "akademik",   "label": "Akademik ve Bilimsel İş Birliği" },
