@@ -91,9 +91,9 @@
       { "source": "İstikbal Gazetesi", "title": "Dikkat Eksikliği Öğrenme Güçlüğüne Neden Olabilir", "url": "https://www.istikbalgazetesi.com/dikkat-eksikligi-ogrenme-guclugune-neden-olabilir" },
       { "source": "Cumhuriyet", "title": "Çocuklara Bayram Harçlığı Verilirken Abartıya Kaçılmamalı", "url": "https://www.cumhuriyet.com.tr/yasam/cocuklara-bayram-harcligi-verilirken-abartiya-kacilmamali-2073495" }
     ],
-    "main_video":  { "id": "Z1wMPQ0HsVE", "title": "Klinik Görüş ve Değerlendirmeler" },
+    "main_video":  { "id": "Z1wMPQ0HsVE", "title": "Klinik Görüş ve Değerlendirmeler", "blog_url": "/blog/sinav-kaygisi-nedir/" },
     "side_videos": [
-      { "id": "1qsziCUsMzM", "title": "Klinik Görüş ve Değerlendirmeler" }
+      { "id": "1qsziCUsMzM", "title": "Klinik Görüş ve Değerlendirmeler", "blog_url": "/blog/gunluk-yasamda-kaygi-nedir/" }
     ]
   },
   "newsletter": {

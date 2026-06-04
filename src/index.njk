@@ -243,13 +243,27 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
 
     <div class="grid md:grid-cols-2 gap-8 mt-12 md:mt-16">
       {% if home.media.main_video.id %}
-        <div class="w-full">
+        <div class="w-full flex flex-col">
           {% youtube home.media.main_video.id, home.media.main_video.title %}
+          {% if home.media.main_video.blog_url %}
+          <div class="mt-4 self-start">
+            <a href="{{ home.media.main_video.blog_url }}" class="inline-flex items-center gap-2 text-sm font-medium text-sage-500 hover:text-sage-600 transition-colors">
+              <span class="w-1.5 h-1.5 rounded-full bg-sage-400"></span> Klinik Özeti Oku <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          {% endif %}
         </div>
       {% endif %}
       {% for v in home.media.side_videos %}
-        <div class="w-full">
+        <div class="w-full flex flex-col">
           {% youtube v.id, v.title %}
+          {% if v.blog_url %}
+          <div class="mt-4 self-start">
+            <a href="{{ v.blog_url }}" class="inline-flex items-center gap-2 text-sm font-medium text-sage-500 hover:text-sage-600 transition-colors">
+              <span class="w-1.5 h-1.5 rounded-full bg-sage-400"></span> Klinik Özeti Oku <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
