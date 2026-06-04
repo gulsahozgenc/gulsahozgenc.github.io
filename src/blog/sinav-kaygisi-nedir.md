@@ -1,7 +1,7 @@
 ---
 title: "Sınav Kaygısının Nedenleri ve Başa Çıkma Yöntemleri"
 summary: "Sınav dönemlerinde öğrencilerin sıklıkla yaşadığı sınav kaygısı nedir, belirtileri nelerdir ve aileler bu süreçte çocuklarına nasıl destek olabilir?"
-date: 2026-06-04
+date: 2023-06-24
 ---
 
 {% youtube "Z1wMPQ0HsVE" %}

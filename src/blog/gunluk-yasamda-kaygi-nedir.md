@@ -1,7 +1,7 @@
 ---
 title: "Günlük Yaşamda Kaygı: Neden Kaygı Duyarız ve Nasıl Yönetiriz?"
 summary: "Sağlıklı bir yaşam sürerken karşımıza çıkan kaygı duygusu aslında nedir? Hangi durumlar kaygıyı tetikler ve kaygıyla nasıl sağlıklı bir şekilde başa çıkabiliriz?"
-date: 2026-06-03
+date: 2024-11-07
 ---
 
 {% youtube "1qsziCUsMzM" %}
