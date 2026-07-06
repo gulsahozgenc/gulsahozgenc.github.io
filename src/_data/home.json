@@ -103,6 +103,10 @@
         "title": "Klinik Görüş ve Değerlendirmeler", 
         "blog_url": "/blog/gunluk-yasamda-kaygi-nedir/",
         "short_summary": "Kaygı evrimsel bir hayatta kalma tepkisidir ancak belirsizlik ve mükemmeliyetçilik ile kontrol edilemez hale gelebilir. Bedensel regülasyon (nefes), fiziksel egzersiz ve bilişsel yeniden yapılandırma yöntemleriyle işlevsel bir şekilde yönetilebilir."
+      },
+      {
+        "id": "WkUeQYKSWG8",
+        "title": "Klinik Görüş ve Değerlendirmeler"
       }
     ]
   },
@@ -120,7 +124,7 @@
     "heading_accent": "bilgi.",
     "lede": "Akademik çalışmalar, bilimsel iş birlikleri, eğitim talepleri veya genel sorularınız için aşağıdaki formu doldurabilir ya da doğrudan e-posta üzerinden ulaşabilirsiniz.",
     "info": [
-      { "icon": "envelope", "text": "iletisim@gulsahozgenc.com", "href": "mailto:iletisim@gulsahozgenc.com" },
+      { "icon": "envelope", "text": "gulsahozgencc1@gmail.com", "href": "mailto:gulsahozgencc1@gmail.com" },
       { "icon": "pin",      "text": "İstanbul", "href": "" },
       { "icon": "clock",    "text": "İSÜ Medical Park GOP Hastanesi", "href": "" },
       { "icon": "calendar", "text": "Klinik Günleri: Pzt, Salı, Cts, Pazar (10:00 - 17:00)", "href": "" }
