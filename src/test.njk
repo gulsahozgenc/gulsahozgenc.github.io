@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Beck Depresyon Envanteri
+title: Kısa Depresyon Tarama Testi
 permalink: /test/index.html
 ---
 <div class="pt-32 pb-24 min-h-screen bg-warm-200">
@@ -9,8 +9,8 @@ permalink: /test/index.html
       <p class="eyebrow flex items-center justify-center gap-3">
         <span class="divider"></span> Öz Değerlendirme <span class="divider"></span>
       </p>
-      <h1 class="heading-display mb-4 mt-4">Depresyon Envanteri</h1>
-      <p class="lede">Aşağıdaki soruları son iki haftanızı göz önünde bulundurarak cevaplayınız. Bu test bir tıbbi tanı aracı değildir, yalnızca mevcut ruh haliniz hakkında bir ön fikir verme amacı taşır.</p>
+      <h1 class="heading-display mb-4 mt-4">Kısa Depresyon Tarama Testi</h1>
+      <p class="lede">Aşağıdaki soruları son iki haftanızı göz önünde bulundurarak cevaplayınız. Bu 5 soruluk kısa form, Beck Depresyon Envanteri maddelerinden esinlenen bir öz değerlendirme aracıdır; envanterin tamamı değildir ve tıbbi tanı yerine geçmez. Yalnızca mevcut ruh haliniz hakkında bir ön fikir verme amacı taşır.</p>
     </div>
 
     <div class="bg-white p-6 md:p-10 rounded-lg shadow-soft ring-1 ring-clay-400/5">
@@ -122,5 +122,8 @@ permalink: /test/index.html
     document.getElementById('resultDescription').innerText = desc;
     document.getElementById('resultContainer').classList.remove('hidden');
     document.getElementById('resultContainer').scrollIntoView({ behavior: 'smooth' });
+
+    // Skor gizlilik nedeniyle gönderilmez, yalnızca tamamlanma bilgisi iletilir.
+    if (typeof gtag === "function") gtag("event", "test_completed");
   }
 </script>

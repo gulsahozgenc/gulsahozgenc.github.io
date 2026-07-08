@@ -1,6 +1,31 @@
 <!doctype html>
 <html lang="{{ site.lang }}">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fdfcfa" />
+
+  <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.tagline }}{% endif %}</title>
+
+  <meta name="description" content="{{ summary or description or site.description }}" />
+  <meta name="author" content="{{ site.author }}" />
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="{{ site.locale }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:title" content="{{ title or site.title }}" />
+  <meta property="og:description" content="{{ summary or description or site.description }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:image" content="{{ site.url }}{{ image or '/assets/img/portrait.jpg' }}" />
+  <meta property="og:image:alt" content="{{ title or site.title }}" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title or site.title }}" />
+  <meta name="twitter:description" content="{{ description or site.description }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ image or '/assets/img/portrait.jpg' }}" />
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2RLG6SDNJ"></script>
   <script>
@@ -19,26 +44,23 @@
     })(window, document, "clarity", "script", "x0yrei5pgg");
   </script>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#fdfcfa" />
-
-  <title>{% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.tagline }}{% endif %}</title>
-
-  <meta name="description" content="{{ summary or description or site.description }}" />
-  <meta name="author" content="{{ site.author }}" />
-
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="{{ site.locale }}" />
-  <meta property="og:title" content="{{ title or site.title }}" />
-  <meta property="og:description" content="{{ summary or description or site.description }}" />
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="{{ title or site.title }}" />
-  <meta name="twitter:description" content="{{ description or site.description }}" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ site.author | dump | safe }},
+    "jobTitle": {{ site.tagline | dump | safe }},
+    "description": {{ site.description | dump | safe }},
+    "url": "{{ site.url }}",
+    "image": "{{ site.url }}/assets/img/portrait.jpg",
+    "email": "mailto:{{ site.email }}",
+    "sameAs": [
+      {%- set comma = joiner(",") -%}
+      {%- for key, link in site.socials %}{% if link %}{{ comma() }}{{ link | dump | safe }}{% endif %}{% endfor -%}
+    ],
+    "knowsLanguage": "tr"
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,6 +102,12 @@
           a.addEventListener("click", function () { menu.classList.add("hidden"); });
         });
       }
+
+      document.querySelectorAll('a[href*="instagram.com"], a[href*="ig.me"]').forEach(function (a) {
+        a.addEventListener("click", function () {
+          if (typeof gtag === "function") gtag("event", "instagram_click", { link_url: a.href });
+        });
+      });
     })();
   </script>
 </body>

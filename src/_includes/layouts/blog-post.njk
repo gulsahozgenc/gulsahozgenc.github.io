@@ -2,6 +2,28 @@
 layout: layouts/base.njk
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ title | dump | safe }},
+  "description": {{ (summary or site.description) | dump | safe }},
+  "datePublished": "{{ page.date.toISOString() }}",
+  "inLanguage": "{{ site.lang }}",
+  "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author | dump | safe }},
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author | dump | safe }},
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+
 <article class="pt-32 pb-24 md:pt-40 md:pb-32 min-h-screen">
   <div class="container-academy max-w-3xl">
     
@@ -31,6 +53,18 @@ layout: layouts/base.njk
     <div class="prose prose-sage prose-lg max-w-none text-clay-200 text-justify">
       {{ content | safe }}
     </div>
+
+    <aside class="mt-16 p-8 md:p-10 rounded-lg bg-sage-500/5 ring-1 ring-sage-400/20">
+      <h2 class="font-serif text-2xl text-clay-400 mb-3">Destek almayı düşünüyorsanız</h2>
+      <p class="text-clay-200 text-sm md:text-base leading-relaxed mb-6">
+        Ruh halinizle ilgili bir ön fikir edinmek için kısa tarama testini deneyebilir
+        veya doğrudan iletişime geçebilirsiniz.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="/#iletisim" class="btn-primary">İletişime Geçin</a>
+        <a href="/test/" class="btn-secondary">Kısa Tarama Testi</a>
+      </div>
+    </aside>
 
   </div>
 </article>
