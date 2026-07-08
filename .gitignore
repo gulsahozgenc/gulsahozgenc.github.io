@@ -7,3 +7,4 @@ _site/
 .env.*
 !.env.example
 identity_data/
+site_raporları/
