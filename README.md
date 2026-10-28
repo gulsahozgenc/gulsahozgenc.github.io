@@ -8,6 +8,7 @@ Klinik Nöropsikolog **Gülşah Özgenç** kişisel portfolyo sitesi.
 - [Tailwind CSS](https://tailwindcss.com/) (PostCSS)
 - Nunjucks templating
 - GitHub Pages (özel domain: `gulsahozgenc.com`)
+- Yazı tipleri yerelden sunulur (`src/assets/fonts/`); Google Fonts'a istek gitmez
 
 ## Geliştirme
 
@@ -45,6 +46,10 @@ tailwind.config  renk paleti & tipografi
 - **Navigasyon**: `src/_data/nav.json`
 - **Akademik yayınlar**: `src/_data/papers.json`
 - **Portre**: `src/assets/img/portrait.jpg`
+- **Paylaşım görseli** (og:image): `src/assets/img/og.jpg`, 1200x630
+- **Analitik kimlikleri**: `src/_data/site.json` → `analytics`; GA4 ve Clarity yalnızca ziyaretçi çerez bandında onay verirse yüklenir
+- **Gizlilik / KVKK sayfası**: `src/gizlilik.njk` (`/gizlilik/`)
+- **Ana sayfa istatistikleri**: `src/_data/stats.js` özgeçmiş verisinden hesaplar; `home.json` içindeki `value` doluysa o kullanılır
 
 ## Form
 

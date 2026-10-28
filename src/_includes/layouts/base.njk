@@ -11,6 +11,7 @@
   <meta name="author" content="{{ site.author }}" />
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  {% if noindex %}<meta name="robots" content="noindex, nofollow" />{% endif %}
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="{{ site.locale }}" />
@@ -18,31 +19,13 @@
   <meta property="og:title" content="{{ title or site.title }}" />
   <meta property="og:description" content="{{ summary or description or site.description }}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <meta property="og:image" content="{{ site.url }}{{ image or '/assets/img/portrait.jpg' }}" />
+  <meta property="og:image" content="{{ site.url }}{{ image or '/assets/img/og.jpg' }}" />
   <meta property="og:image:alt" content="{{ title or site.title }}" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ title or site.title }}" />
   <meta name="twitter:description" content="{{ description or site.description }}" />
-  <meta name="twitter:image" content="{{ site.url }}{{ image or '/assets/img/portrait.jpg' }}" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2RLG6SDNJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-H2RLG6SDNJ');
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "x0yrei5pgg");
-  </script>
+  <meta name="twitter:image" content="{{ site.url }}{{ image or '/assets/img/og.jpg' }}" />
 
   <script type="application/ld+json">
   {
@@ -62,9 +45,8 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/playfair-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="stylesheet" href="/assets/css/style.css" />
 
@@ -79,6 +61,7 @@
   </main>
 
   {% include "partials/footer.njk" %}
+  {% include "partials/consent.njk" %}
 
   <script>
     (function () {
@@ -102,6 +85,15 @@
           a.addEventListener("click", function () { menu.classList.add("hidden"); });
         });
       }
+
+      document.querySelectorAll("[data-map-load]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var box = b.closest("[data-map]");
+          var tpl = box.querySelector("[data-map-template]");
+          box.querySelector("[data-map-placeholder]").remove();
+          box.appendChild(tpl.content.cloneNode(true));
+        });
+      });
 
       document.querySelectorAll('a[href*="instagram.com"], a[href*="ig.me"]').forEach(function (a) {
         a.addEventListener("click", function () {

@@ -41,7 +41,7 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
         {% for stat in home.hero.stats %}
         <div>
           <dt class="eyebrow">{{ stat.label_top }}</dt>
-          <dd class="font-serif text-2xl text-clay-500 mt-1">{{ stat.value }}</dd>
+          <dd class="font-serif text-2xl text-clay-500 mt-1">{{ stat.value or stats[stat.key] }}</dd>
           <p class="text-xs text-clay-100 mt-1">{{ stat.label_bottom }}</p>
         </div>
         {% endfor %}
@@ -486,8 +486,15 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
       {% endif %}
       
       {% if home.contact.map_embed %}
-      <div class="mt-10 rounded-lg overflow-hidden ring-1 ring-clay-400/8 shadow-soft bg-white/50 p-2">
-        {{ home.contact.map_embed | safe }}
+      <div class="mt-10 rounded-lg overflow-hidden ring-1 ring-clay-400/8 shadow-soft bg-white/50 p-2" data-map>
+        <div class="flex flex-col items-start gap-3 p-4 text-sm text-clay-200 leading-relaxed" data-map-placeholder>
+          <p>Harita Google Haritalar'dan yüklenir ve Google çerez bırakabilir; görmek için düğmeye basın.</p>
+          <div class="flex flex-wrap gap-3">
+            <button type="button" data-map-load class="btn-secondary !py-2 !px-4 text-xs">Haritayı göster</button>
+            {% if home.contact.map_link %}<a href="{{ home.contact.map_link }}" target="_blank" rel="noopener" class="btn-ghost !py-2 !px-4 text-xs">Google Haritalar'da aç</a>{% endif %}
+          </div>
+        </div>
+        <template data-map-template>{{ home.contact.map_embed | safe }}</template>
       </div>
       {% endif %}
     </div>
@@ -500,6 +507,7 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
         <form action="https://formspree.io/f/{{ site.form.formspreeId }}" method="POST"
               class="bg-white ring-1 ring-clay-400/8 rounded-lg p-6 md:p-10 space-y-6 shadow-soft">
           <input type="hidden" name="_next" value="{{ site.url }}/tesekkurler/" />
+          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
           <div>
             <label for="contact-name" class="eyebrow">İsim</label>
@@ -533,8 +541,13 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
 
           <input type="hidden" name="_subject" value="Yeni iletişim formu mesajı" />
 
+          <label class="flex items-start gap-3 text-xs text-clay-200 leading-relaxed pt-2 cursor-pointer">
+            <input type="checkbox" name="kvkk_onay" value="evet" required class="mt-0.5 shrink-0" />
+            <span>{{ home.contact.consent_checkbox | safe }}</span>
+          </label>
+
           <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
-            <p class="text-xs text-clay-100 max-w-sm">{{ home.contact.consent_text }}</p>
+            <p class="text-xs text-clay-100 max-w-sm">{{ home.contact.consent_text | safe }}</p>
             <button type="submit" class="btn-primary">
               {{ home.contact.submit_label }}
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

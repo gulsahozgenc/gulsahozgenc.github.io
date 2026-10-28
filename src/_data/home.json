@@ -15,9 +15,24 @@
     "portrait_caption_left": "Uzm. Klnk. Psk.",
     "portrait_caption_right": "Gülşah Özgenç",
     "stats": [
-      { "value": "5+",  "label_top": "Yıl",       "label_bottom": "Klinik Deneyim" },
-      { "value": "8+",  "label_top": "Eğitim",    "label_bottom": "Uzmanlık & Test Sertifikası" },
-      { "value": "5",   "label_top": "Kurum",     "label_bottom": "Hastane & Klinik Merkezi" }
+      {
+        "key": "years",
+        "value": "",
+        "label_top": "Yıl",
+        "label_bottom": "Klinik Deneyim"
+      },
+      {
+        "key": "trainings",
+        "value": "",
+        "label_top": "Eğitim",
+        "label_bottom": "Uzmanlık & Test Sertifikası"
+      },
+      {
+        "key": "institutions",
+        "value": "",
+        "label_top": "Kurum",
+        "label_bottom": "Hastane & Klinik Merkezi"
+      }
     ]
   },
   "philosophy": {
@@ -31,10 +46,22 @@
       "Tüm bu çalışmalara ek olarak, İSÜ Medical Park Gaziosmanpaşa Hastanesi bünyesinde nöroloji ve beyin cerrahisi ekipleriyle çalışıyorum. Alzheimer, Parkinson ve epilepsi gibi hastalıkların takibinde multidisipliner bir yaklaşımla kapsamlı nöropsikolojik değerlendirmeler gerçekleştiriyorum."
     ],
     "principles": [
-      { "title": "Bilişsel Davranışçı & Şema Yaklaşımı", "subtitle": "Kaygı ve depresyonda güncel ve etkili ekoller." },
-      { "title": "EMDR Uygulamaları", "subtitle": "Travma ve zorlayıcı yaşam deneyimlerinin işlenmesi." },
-      { "title": "Nöropsikolojik Değerlendirme", "subtitle": "Bilişsel işlevlerin ve klinik süreçlerin takibi." },
-      { "title": "Çocuk & Ergen Çalışmaları", "subtitle": "DEHB, öğrenme güçlüğü ve gelişimsel test uygulamaları." }
+      {
+        "title": "Bilişsel Davranışçı & Şema Yaklaşımı",
+        "subtitle": "Kaygı ve depresyonda güncel ve etkili ekoller."
+      },
+      {
+        "title": "EMDR Uygulamaları",
+        "subtitle": "Travma ve zorlayıcı yaşam deneyimlerinin işlenmesi."
+      },
+      {
+        "title": "Nöropsikolojik Değerlendirme",
+        "subtitle": "Bilişsel işlevlerin ve klinik süreçlerin takibi."
+      },
+      {
+        "title": "Çocuk & Ergen Çalışmaları",
+        "subtitle": "DEHB, öğrenme güçlüğü ve gelişimsel test uygulamaları."
+      }
     ]
   },
   "research": {
@@ -83,24 +110,48 @@
     "heading_prefix": "Basın ve",
     "heading_accent": "dijital medya.",
     "lede": "Ruh sağlığı ve sinirbilim alanındaki haberlerim, dijital platformlardaki yayınlarım ve katıldığım video podcast'ler.",
-    "tags": ["Psikoloji", "Sinirbilim", "Nöropsikoloji"],
-    "articles": [
-      { "source": "Cumhuriyet", "title": "Ara Tatil İçin Uzmanından Uyarı: Kritik Bir Dönem", "url": "https://www.cumhuriyet.com.tr/yasam/ara-tatil-icin-uzmanindan-uyari-cocuklarin-ruh-sagligi-icin-kritik-bir-donem-2470461" },
-      { "source": "Batman Çağdaş", "title": "Aileler Okula Uyum Sürecinde Çocuklarının Kaygılarını Dinlemeli", "url": "https://www.batmancagdas.com/aileler-okula-uyum-surecinde-cocuklarinin-kaygilarini-dinlemeli" },
-      { "source": "Yeniçağ Gazetesi", "title": "Yarıyıl Tatili İçin Ailelere 10 Öneri", "url": "https://www.yenicaggazetesi.com/yariyil-tatili-icin-ailelere-10-oneri-878597h.htm" },
-      { "source": "İstikbal Gazetesi", "title": "Dikkat Eksikliği Öğrenme Güçlüğüne Neden Olabilir", "url": "https://www.istikbalgazetesi.com/dikkat-eksikligi-ogrenme-guclugune-neden-olabilir" },
-      { "source": "Cumhuriyet", "title": "Çocuklara Bayram Harçlığı Verilirken Abartıya Kaçılmamalı", "url": "https://www.cumhuriyet.com.tr/yasam/cocuklara-bayram-harcligi-verilirken-abartiya-kacilmamali-2073495" }
+    "tags": [
+      "Psikoloji",
+      "Sinirbilim",
+      "Nöropsikoloji"
     ],
-    "main_video":  { 
-      "id": "Z1wMPQ0HsVE", 
-      "title": "Klinik Görüş ve Değerlendirmeler", 
+    "articles": [
+      {
+        "source": "Cumhuriyet",
+        "title": "Ara Tatil İçin Uzmanından Uyarı: Kritik Bir Dönem",
+        "url": "https://www.cumhuriyet.com.tr/yasam/ara-tatil-icin-uzmanindan-uyari-cocuklarin-ruh-sagligi-icin-kritik-bir-donem-2470461"
+      },
+      {
+        "source": "Batman Çağdaş",
+        "title": "Aileler Okula Uyum Sürecinde Çocuklarının Kaygılarını Dinlemeli",
+        "url": "https://www.batmancagdas.com/aileler-okula-uyum-surecinde-cocuklarinin-kaygilarini-dinlemeli"
+      },
+      {
+        "source": "Yeniçağ Gazetesi",
+        "title": "Yarıyıl Tatili İçin Ailelere 10 Öneri",
+        "url": "https://www.yenicaggazetesi.com/yariyil-tatili-icin-ailelere-10-oneri-878597h.htm"
+      },
+      {
+        "source": "İstikbal Gazetesi",
+        "title": "Dikkat Eksikliği Öğrenme Güçlüğüne Neden Olabilir",
+        "url": "https://www.istikbalgazetesi.com/dikkat-eksikligi-ogrenme-guclugune-neden-olabilir"
+      },
+      {
+        "source": "Cumhuriyet",
+        "title": "Çocuklara Bayram Harçlığı Verilirken Abartıya Kaçılmamalı",
+        "url": "https://www.cumhuriyet.com.tr/yasam/cocuklara-bayram-harcligi-verilirken-abartiya-kacilmamali-2073495"
+      }
+    ],
+    "main_video": {
+      "id": "Z1wMPQ0HsVE",
+      "title": "Klinik Görüş ve Değerlendirmeler",
       "blog_url": "/blog/sinav-kaygisi-nedir/",
       "short_summary": "Sınav kaygısı, öğrencinin akademik performansını olumsuz etkileyen yoğun bir endişe halidir. Performans endişesi ve çevresel beklentiler temel nedenlerindendir. Bilişsel Davranışçı Terapi (BDT) ve ailenin sürece doğru yaklaşımı ile başarılı bir şekilde yönetilebilir."
     },
     "side_videos": [
-      { 
-        "id": "1qsziCUsMzM", 
-        "title": "Klinik Görüş ve Değerlendirmeler", 
+      {
+        "id": "1qsziCUsMzM",
+        "title": "Klinik Görüş ve Değerlendirmeler",
         "blog_url": "/blog/gunluk-yasamda-kaygi-nedir/",
         "short_summary": "Kaygı evrimsel bir hayatta kalma tepkisidir ancak belirsizlik ve mükemmeliyetçilik ile kontrol edilemez hale gelebilir. Bedensel regülasyon (nefes), fiziksel egzersiz ve bilişsel yeniden yapılandırma yöntemleriyle işlevsel bir şekilde yönetilebilir."
       },
@@ -124,19 +175,48 @@
     "heading_accent": "bilgi.",
     "lede": "Akademik çalışmalar, bilimsel iş birlikleri, eğitim talepleri veya genel sorularınız için aşağıdaki formu doldurabilir ya da doğrudan e-posta üzerinden ulaşabilirsiniz.",
     "info": [
-      { "icon": "envelope", "text": "gulsahozgencc1@gmail.com", "href": "mailto:gulsahozgencc1@gmail.com" },
-      { "icon": "pin",      "text": "İstanbul", "href": "" },
-      { "icon": "clock",    "text": "İSÜ Medical Park GOP Hastanesi", "href": "" }
+      {
+        "icon": "envelope",
+        "text": "gulsahozgencc1@gmail.com",
+        "href": "mailto:gulsahozgencc1@gmail.com"
+      },
+      {
+        "icon": "pin",
+        "text": "İstanbul",
+        "href": ""
+      },
+      {
+        "icon": "clock",
+        "text": "İSÜ Medical Park GOP Hastanesi",
+        "href": ""
+      }
     ],
     "map_embed": "<iframe src=\"https://maps.google.com/maps?q=Medical%20Park%20Gaziosmanpa%C5%9Fa%20Hastanesi&t=&z=13&ie=UTF8&iwloc=&output=embed\" width=\"100%\" height=\"220\" style=\"border:0; border-radius: 8px;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
     "form_options": [
-      { "value": "hastane",    "label": "Medical Park Randevu Bilgisi" },
-      { "value": "akademik",   "label": "Akademik ve Bilimsel İş Birliği" },
-      { "value": "egitim",     "label": "Seminer / Eğitim Talebi" },
-      { "value": "kurumsal",   "label": "Kurumsal İletişim" },
-      { "value": "bilgi",      "label": "Soru ve Bilgi Talebi" }
+      {
+        "value": "hastane",
+        "label": "Medical Park Randevu Bilgisi"
+      },
+      {
+        "value": "akademik",
+        "label": "Akademik ve Bilimsel İş Birliği"
+      },
+      {
+        "value": "egitim",
+        "label": "Seminer / Eğitim Talebi"
+      },
+      {
+        "value": "kurumsal",
+        "label": "Kurumsal İletişim"
+      },
+      {
+        "value": "bilgi",
+        "label": "Soru ve Bilgi Talebi"
+      }
     ],
     "submit_label": "Mesajı Gönder",
-    "consent_text": "Mesajınız bana doğrudan ulaşır ve gizlilik ilkeleri kapsamında değerlendirilir."
+    "consent_text": "Mesajınız doğrudan bana ulaşır ve yalnızca talebinize yanıt vermek için kullanılır.",
+    "map_link": "https://maps.google.com/?q=Medical+Park+Gaziosmanpa%C5%9Fa+Hastanesi",
+    "consent_checkbox": "Kişisel verilerimin <a href=\"/gizlilik/\" class=\"underline hover:text-sage-500\">aydınlatma metninde</a> açıklanan şekilde işlenmesini ve form hizmeti sağlayıcısı Formspree'ye (ABD) aktarılmasını kabul ediyorum."
   }
 }

@@ -23,5 +23,9 @@
   "form": {
     "formspreeId": "mbderdzd",
     "typeformId": ""
+  },
+  "analytics": {
+    "ga4": "G-H2RLG6SDNJ",
+    "clarity": "x0yrei5pgg"
   }
 }

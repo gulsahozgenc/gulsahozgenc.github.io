@@ -101,6 +101,12 @@ content:
         fields:
           - { name: formspreeId, label: "Formspree id (formspree.io'dan al)", type: string }
           - { name: typeformId,  label: "Typeform id (boşsa Formspree kullanılır)", type: string }
+      - name: analytics
+        label: Analitik (yalnızca çerez onayı verenlerde yüklenir)
+        type: object
+        fields:
+          - { name: ga4,     label: "Google Analytics 4 ölçüm kimliği (G-...)", type: string }
+          - { name: clarity, label: "Microsoft Clarity proje kimliği (boşsa yüklenmez)", type: string }
 
   # ---------------------------------------------------------------- HOME PAGE
   - name: home
@@ -142,7 +148,16 @@ content:
                 type: object
                 list: true
                 fields:
-                  - { name: value,        label: "Değer (örn: 12+)", type: string }
+                  - name: key
+                    label: "Hesaplanan değer"
+                    type: select
+                    description: "Değer alanı boşsa özgeçmiş verisinden hesaplanır."
+                    options:
+                      values:
+                        - { name: years,        label: "Klinik deneyim yılı" }
+                        - { name: trainings,    label: "Eğitim ve sertifika sayısı" }
+                        - { name: institutions, label: "Kurum sayısı" }
+                  - { name: value,        label: "Değer (boş bırakılırsa hesaplanır)", type: string }
                   - { name: label_top,    label: "Üst etiket",       type: string }
                   - { name: label_bottom, label: "Alt etiket",       type: string }
         settings:
@@ -318,8 +333,10 @@ content:
                 fields:
                   - { name: value, label: "Değer (form data)", type: string }
                   - { name: label, label: "Görünen metin",    type: string }
+              - { name: map_link,     label: "Google Haritalar bağlantısı (harita yüklenmeden önceki düğme)", type: string }
               - { name: submit_label, label: "Form gönder buton metni", type: string }
-              - { name: consent_text, label: "Form altı KVKK metni",     type: text }
+              - { name: consent_checkbox, label: "Zorunlu onay kutusu metni (HTML olabilir)", type: text }
+              - { name: consent_text, label: "Form altı kısa not",     type: text }
         settings:
           content:
             merge: true

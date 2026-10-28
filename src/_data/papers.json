@@ -1,5 +1,23 @@
 [
   {
+    "title": "Comparative Performance of the Mini-Mental State Examination and the Montreal Cognitive Assessment at Their Conventional Thresholds",
+    "type": "Hakemli Makale",
+    "year": 2026,
+    "venue": "Turkish Journal of Neurology · Hakem değerlendirmesinde",
+    "summary": "Tek merkezli retrospektif bir çalışmada MMSE ve MoCA'nın geleneksel kesme noktalarındaki performansı eşleştirilmiş uyumsuzluk (McNemar) ve ROC analiziyle karşılaştırıldı. MoCA'nın hafif bilişsel bozukluktaki yüksek duyarlılığı, daha iyi ayırt edicilikten değil, daha gevşek kesme noktasından kaynaklanıyor.",
+    "icon": "brain",
+    "url": ""
+  },
+  {
+    "title": "Has Brainrot Entered the Research Literature? A Bibliometric Analysis and a Neurocognitive Hypothesis",
+    "type": "Hakemli Makale",
+    "year": 2026,
+    "venue": "Quality & Quantity · Değerlendirmeye sunuldu",
+    "summary": "Yeni ortaya çıkan \"brainrot\" literatürünün bibliyometrik ağ analizi ve algoritma güdümlü bilişsel yıpranmaya ilişkin nörobilişsel bir hipotez.",
+    "icon": "spiral",
+    "url": ""
+  },
+  {
     "title": "MoCA ve Mini Mental Testin Karşılaştırılmalı Duyarlılığı: Hafif Bilişsel Bozukluk ve Demans Alt Tiplerinde Retrospektif Bir Analiz",
     "type": "Konferans Bildirisi",
     "year": 2025,
@@ -20,11 +38,11 @@
   {
     "title": "Romantik İlişkilerde Doyumun Yordayıcısı Olarak Aile Aidiyeti: Üniversite Öğrencileri Örneği",
     "type": "Hakemli Makale",
-    "year": 2025,
-    "venue": "DergiPark",
-    "summary": "Üniversite öğrencilerinde aile aidiyetinin romantik ilişki doyumu üzerindeki etkisinin incelenmesi.",
+    "year": 2026,
+    "venue": "Beykent Üniversitesi Sosyal Bilimler Dergisi, 19(1), 72–88",
+    "summary": "Üniversite öğrencilerinde aile aidiyetinin romantik ilişki doyumunu yordayıp yordamadığının incelenmesi (Karameşe, Öksüz ve Özgenç).",
     "icon": "thread",
-    "url": ""
+    "url": "https://doi.org/10.18221/bujss.1798086"
   },
   {
     "title": "Polislerde Öz Denetim, Sosyal Sorun Çözme Becerisi, Psikolojik Sağlamlık ve Duyguları İfade Etme Arasındaki İlişkilerin İncelenmesi",
@@ -33,24 +51,6 @@
     "venue": "Yayınlanmış Yüksek Lisans Tezi · Arel Üniversitesi",
     "summary": "Polis memurlarında öz denetim, sosyal problem çözme becerisi, psikolojik dayanıklılık ve duygu ifadesi arasındaki ilişkilerin kapsamlı analizi.",
     "icon": "brain",
-    "url": "#"
-  },
-  {
-    "title": "İstanbul Medipol Üniversitesi Okul Birinciliği",
-    "type": "Ödül",
-    "year": 2016,
-    "venue": "İstanbul Medipol Üniversitesi",
-    "summary": "%100 Başarı Bursu ile ödüllendirilen okul birinciliği başarısı.",
-    "icon": "compass",
-    "url": ""
-  },
-  {
-    "title": "TÜBİTAK Coğrafya Alanı Projesi",
-    "type": "Ödül",
-    "year": 2014,
-    "venue": "TÜBİTAK",
-    "summary": "TÜBİTAK tarafından desteklenen coğrafya alanındaki araştırma projesi.",
-    "icon": "star",
     "url": ""
   }
 ]
