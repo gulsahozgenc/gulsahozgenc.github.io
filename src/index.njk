@@ -473,8 +473,19 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
       </ul>
       {% endif %}
 
-      {% if site.phone.href %}
-      <div class="mt-8">
+      {% if site.phone.href or site.whatsapp.number %}
+      <div class="mt-8 flex flex-wrap gap-3">
+        {% if site.whatsapp.number %}
+        <a href="https://wa.me/{{ site.whatsapp.number }}{% if site.whatsapp.message %}?text={{ site.whatsapp.message | urlencode }}{% endif %}"
+           target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm font-medium tracking-wide
+                  bg-sage-500 text-white ring-1 ring-sage-500 hover:bg-sage-600 hover:ring-sage-600
+                  transition-all shadow-soft hover:shadow-paper">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8.2 8.2 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.6 13.6 0 0 0 5.2 4.6c.7.3 1.3.5 1.7.6a4.1 4.1 0 0 0 1.9.1 3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.3a8.3 8.3 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3Z"/></svg>
+          WhatsApp'tan yazın
+        </a>
+        {% endif %}
+        {% if site.phone.href %}
         <a href="tel:{{ site.phone.href }}"
            class="inline-flex items-center gap-2 px-5 py-3 rounded-md text-sm font-medium tracking-wide
                   bg-white text-clay-400 ring-1 ring-clay-400/10 hover:ring-sage-400/40 hover:text-sage-500
@@ -482,6 +493,7 @@ description: "Uzman Klinik Psikolog Gülşah Özgenç — nöropsikolojik değer
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
           {{ site.phone.display }}
         </a>
+        {% endif %}
       </div>
       {% endif %}
       

@@ -95,6 +95,18 @@ content:
         fields:
           - { name: title,       label: Bülten başlığı, type: string }
           - { name: description, label: Bülten açıklaması, type: text }
+      - name: phone
+        label: Telefon
+        type: object
+        fields:
+          - { name: display, label: "Görünen numara (ör. +90 553 663 78 61)", type: string }
+          - { name: href,    label: "Aranacak numara (ör. +905536637861)", type: string }
+      - name: whatsapp
+        label: WhatsApp düğmesi
+        type: object
+        fields:
+          - { name: number,  label: "Numara, ülke koduyla, + ve boşluksuz (ör. 905536637861); boşsa düğme çıkmaz", type: string }
+          - { name: message, label: "Önceden yazılı mesaj", type: string }
       - name: form
         label: Form ayarları
         type: object

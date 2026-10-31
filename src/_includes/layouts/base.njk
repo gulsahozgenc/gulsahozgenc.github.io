@@ -100,6 +100,12 @@
           if (typeof gtag === "function") gtag("event", "instagram_click", { link_url: a.href });
         });
       });
+
+      document.querySelectorAll('a[href*="wa.me"], a[href^="tel:"]').forEach(function (a) {
+        a.addEventListener("click", function () {
+          if (typeof gtag === "function") gtag("event", a.href.indexOf("wa.me") > -1 ? "whatsapp_click" : "phone_click", { link_url: a.href });
+        });
+      });
     })();
   </script>
 </body>
